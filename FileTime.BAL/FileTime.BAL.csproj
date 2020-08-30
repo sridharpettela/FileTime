@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="3.1.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileTime.DAO\FileTime.DAO.csproj" />
+    <ProjectReference Include="..\Interface\FileTime.IBAL\FileTime.IBAL.csproj" />
+    <ProjectReference Include="..\Interface\FileTime.IDAL\FileTime.IDAL.csproj" />
+    <ProjectReference Include="..\Interface\FileTime.IEFM\FileTime.IEFM.csproj" />
+  </ItemGroup>
+
+</Project>

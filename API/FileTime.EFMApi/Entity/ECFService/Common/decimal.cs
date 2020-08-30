@@ -1,0 +1,85 @@
+namespace FileTime.EFMApi.Entity.ECFService
+{
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NumericType2))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AmountType3))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34230")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://niem.gov/niem/proxy/xsd/2.0")]
+    public partial class @decimal
+    {
+
+        private string idField;
+
+        private string metadataField;
+
+        private string linkMetadataField;
+
+        private decimal valueField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://niem.gov/niem/structures/2.0", DataType = "ID")]
+        public string id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+                
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://niem.gov/niem/structures/2.0", DataType = "IDREFS")]
+        public string metadata
+        {
+            get
+            {
+                return this.metadataField;
+            }
+            set
+            {
+                this.metadataField = value;
+                
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://niem.gov/niem/structures/2.0", DataType = "IDREFS")]
+        public string linkMetadata
+        {
+            get
+            {
+                return this.linkMetadataField;
+            }
+            set
+            {
+                this.linkMetadataField = value;
+                
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public decimal Value
+        {
+            get
+            {
+                return this.valueField;
+            }
+            set
+            {
+                this.valueField = value;
+                
+            }
+        }
+
+        
+
+    }
+}

@@ -1,0 +1,1813 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{874536DF-AFCB-4CDA-94C3-2879A6B35781}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FileTime.EFMApi</RootNamespace>
+    <AssemblyName>FileTime.EFMApi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44378</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NLog.4.7.4\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\EFMUserServices\EFMUserService.disco" />
+    <None Include="Connected Services\EFMUserServices\configuration91.svcinfo" />
+    <None Include="Connected Services\EFMUserServices\configuration.svcinfo" />
+    <Content Include="Connected Services\EFMUserServices\FileTime.EFMApi.EFMUserServices.AuthenticateResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EFMUserServices\FileTime.EFMApi.EFMUserServices.BaseResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EFMUserServices\FileTime.EFMApi.EFMUserServices.ChangePasswordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EFMUserServices\FileTime.EFMApi.EFMUserServices.GetUserResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EFMUserServices\FileTime.EFMApi.EFMUserServices.NotificationPreferencesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EFMUserServices\FileTime.EFMApi.EFMUserServices.PasswordQuestionResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EFMUserServices\FileTime.EFMApi.EFMUserServices.ResetPasswordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EFMUserServices\FileTime.EFMApi.EFMUserServices.UpdateUserResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\EFMUserServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <None Include="Connected Services\EFMUserServices\EFMUserService43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService44.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService45.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService46.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService47.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService48.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService49.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService50.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService53.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService54.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService55.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Behaviors\AuthHeaderBehavior.cs" />
+    <Compile Include="Behaviors\ClientMessageInspector.cs" />
+    <Compile Include="Connected Services\EFMUserServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Core\AppException.cs" />
+    <Compile Include="Core\NLogger.cs" />
+    <Compile Include="Core\Util.cs" />
+    <Compile Include="Entity\BinaryCategoryCode.cs" />
+    <Compile Include="Entity\BinaryTypeCode.cs" />
+    <Compile Include="Entity\CountryCode.cs" />
+    <Compile Include="Entity\CourtCode.cs" />
+    <Compile Include="Entity\ECFService\BaseWrapperEntity.cs" />
+    <Compile Include="Entity\ECFService\CancelFilingMessageType.cs" />
+    <Compile Include="Entity\ECFService\CaseListQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\CaseQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\AcceptedIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\AcceptedVariantsDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\AccidentSeverityCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\AccidentSeverityCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AccountFormatCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AccountIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\AccountingCostCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AccountingCostType.cs" />
+    <Compile Include="Entity\ECFService\Common\AccountTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActivityCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActivityConveyanceAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActivityDataLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActivityLocationAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActivityPropertyType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActivityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActualDeliveryDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActualDeliveryTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActualDespatchDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActualDespatchTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActualPickupDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActualPickupTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ActualTemperatureReductionQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\AdditionalAccountIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\AdditionalInformationType.cs" />
+    <Compile Include="Entity\ECFService\Common\AdditionalStreetNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\AddressFormatCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AddressLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\AddressType.cs" />
+    <Compile Include="Entity\ECFService\Common\AddressType1.cs" />
+    <Compile Include="Entity\ECFService\Common\AddressTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AdjustmentReasonCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AdmissionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AdValoremIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\AdvertisementAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\AgencyIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\AgencyNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\AircraftIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\AirFlowPercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\AirTransportType.cs" />
+    <Compile Include="Entity\ECFService\Common\AliasNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\AliasType.cs" />
+    <Compile Include="Entity\ECFService\Common\AllowanceChargeReasonCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AllowanceChargeReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\AllowanceChargeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AllowanceTotalAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\AltitudeMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\AmountRateType.cs" />
+    <Compile Include="Entity\ECFService\Common\AmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\AmountType1.cs" />
+    <Compile Include="Entity\ECFService\Common\AmountType2.cs" />
+    <Compile Include="Entity\ECFService\Common\AmountType3.cs" />
+    <Compile Include="Entity\ECFService\Common\AnimalFoodApprovedIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\AnimalFoodIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\AnnualAverageAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\anyURI.cs" />
+    <Compile Include="Entity\ECFService\Common\AppealTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\AppellateCaseAddedPartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\AppellateCaseNoticeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AppellateCaseRemovedPartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\AppellateCivilCaseType.cs" />
+    <Compile Include="Entity\ECFService\Common\AppellateCourtRuleCaseType.cs" />
+    <Compile Include="Entity\ECFService\Common\ApplicationNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\ApplicationStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ApprovalDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ApprovalStatusType.cs" />
+    <Compile Include="Entity\ECFService\Common\ArrestType.cs" />
+    <Compile Include="Entity\ECFService\Common\AssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\AttachmentType.cs" />
+    <Compile Include="Entity\ECFService\Common\AttributeIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\AuctionConstraintIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\AuctionTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\AuctionURIType.cs" />
+    <Compile Include="Entity\ECFService\Common\AugmentationType.cs" />
+    <Compile Include="Entity\ECFService\Common\AvailabilityDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\AvailabilityStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AverageAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\AverageSubsequentContractAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\AwardDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\AwardingCriteriaDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\AwardingCriteriaIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\AwardingCriteriaResponseType.cs" />
+    <Compile Include="Entity\ECFService\Common\AwardingCriteriaType.cs" />
+    <Compile Include="Entity\ECFService\Common\AwardingCriteriaTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AwardingMethodTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\AwardingTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\AwardTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\BackOrderAllowedIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\BackorderQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\BackorderReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\BalanceAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\BalanceBroughtForwardIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\base64Binary.cs" />
+    <Compile Include="Entity\ECFService\Common\BaseAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\BasedOnConsensusIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\BaseQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\BaseUnitMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\BasicConsumedQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\BatchQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\BestBeforeDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\BillingReferenceLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\BillingReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\BinaryObjectType.cs" />
+    <Compile Include="Entity\ECFService\Common\BinaryObjectType1.cs" />
+    <Compile Include="Entity\ECFService\Common\BinaryType.cs" />
+    <Compile Include="Entity\ECFService\Common\BiometricType.cs" />
+    <Compile Include="Entity\ECFService\Common\BirthDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\BlockNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\BondType.cs" />
+    <Compile Include="Entity\ECFService\Common\BookingType.cs" />
+    <Compile Include="Entity\ECFService\Common\boolean.cs" />
+    <Compile Include="Entity\ECFService\Common\BranchType.cs" />
+    <Compile Include="Entity\ECFService\Common\BrandNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\BrokerAssignedIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\BudgetAccountLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\BudgetAccountType.cs" />
+    <Compile Include="Entity\ECFService\Common\BudgetAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\BudgetYearNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\BuildingNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\BuildingNumberType.cs" />
+    <Compile Include="Entity\ECFService\Common\BulkCargoIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\BusinessClassificationEvidenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\BusinessIdentityEvidenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\BuyerEventIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\BuyerProfileURIType.cs" />
+    <Compile Include="Entity\ECFService\Common\CalculationExpressionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CalculationExpressionType.cs" />
+    <Compile Include="Entity\ECFService\Common\CalculationRateType.cs" />
+    <Compile Include="Entity\ECFService\Common\CalculationSequenceNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\CallBaseAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\CallDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\CallExtensionAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\CallTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CancellationNoteType.cs" />
+    <Compile Include="Entity\ECFService\Common\CandidateReductionConstraintIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\CanonicalizationMethodType.cs" />
+    <Compile Include="Entity\ECFService\Common\CanonicalizationMethodType1.cs" />
+    <Compile Include="Entity\ECFService\Common\CapabilityType.cs" />
+    <Compile Include="Entity\ECFService\Common\CapabilityType1.cs" />
+    <Compile Include="Entity\ECFService\Common\CapabilityTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CardAccountType.cs" />
+    <Compile Include="Entity\ECFService\Common\CardChipCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CardTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CargoTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CarrierAssignedIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\CarrierServiceInstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseAbstractorType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseAugmentationType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseAugmentationType1.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseAugmentationType2.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseDispositionDecisionType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseDispositionType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseFilingType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseOfficialType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseOfficialType1.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseParticipantType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseParticipantType1.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseQueryCriteriaType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseTypeCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\CaseTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CatalogueIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\CatalogueItemSpecificationUpdateLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\CatalogueLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\CataloguePricingUpdateLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\CatalogueReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\CatalogueRequestLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\CategoryNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\CertificateOfOriginApplicationType.cs" />
+    <Compile Include="Entity\ECFService\Common\CertificateType.cs" />
+    <Compile Include="Entity\ECFService\Common\CertificateTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CertificateTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChangeConditionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChannelCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChannelType.cs" />
+    <Compile Include="Entity\ECFService\Common\CharacteristicsType.cs" />
+    <Compile Include="Entity\ECFService\Common\CharacterSetCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChargeableQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChargeableWeightMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChargeComponentType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChargeDispositionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChargeIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChargeTotalAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\ChargeType1.cs" />
+    <Compile Include="Entity\ECFService\Common\ChargeType3.cs" />
+    <Compile Include="Entity\ECFService\Common\ChipApplicationIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\CitationCaseAugmentationType.cs" />
+    <Compile Include="Entity\ECFService\Common\CitationType.cs" />
+    <Compile Include="Entity\ECFService\Common\CityNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\CitySubdivisionNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\ClassificationCategoryType.cs" />
+    <Compile Include="Entity\ECFService\Common\ClassificationSchemeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ClauseCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ClauseType.cs" />
+    <Compile Include="Entity\ECFService\Common\CodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CodeType1.cs" />
+    <Compile Include="Entity\ECFService\Common\CodeValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\CollaborationPriorityCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CommentType.cs" />
+    <Compile Include="Entity\ECFService\Common\CommodityClassificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\CommodityCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CommunicationType.cs" />
+    <Compile Include="Entity\ECFService\Common\CompanyIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\CompanyLegalFormCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CompanyLiquidationStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ComparedValueMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\ComparisonDataCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ComparisonDataSourceCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ComparisonForecastIssueDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ComparisonForecastIssueTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CompletedTaskType.cs" />
+    <Compile Include="Entity\ECFService\Common\CompletionIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ComplexObjectType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConditionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConditionDeviationIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConditionsDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConditionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConditionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConditionValueMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsigneeAssignedIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsignmentQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsignmentType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsignorAssignedIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsolidatableIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConstitutionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumerIncentiveTacticTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumersEnergyLevelCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumersEnergyLevelType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumerUnitQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionAverageType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionEnergyQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionHistoryType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionLevelCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionLevelType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionPointType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionReportIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionReportReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionReportType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConsumptionWaterQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContactInformationType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContactType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContainerizedIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContentUnitQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractedCarrierAssignedIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractExecutionRequirementType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractExtensionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractFolderIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractingPartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractingPartyTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractingSystemCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractSubdivisionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ContractTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ConveyanceType.cs" />
+    <Compile Include="Entity\ECFService\Common\CoordinateSystemCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CopyIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\CorporateRegistrationSchemeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CorporateRegistrationTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CorporateStockAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\CorrectionAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\CorrectionType.cs" />
+    <Compile Include="Entity\ECFService\Common\CorrectionTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CorrectionTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CorrectionUnitAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\CountryCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\CountryCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CountrySubentityCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CountrySubentityType.cs" />
+    <Compile Include="Entity\ECFService\Common\CountryType.cs" />
+    <Compile Include="Entity\ECFService\Common\CourtAppearanceType.cs" />
+    <Compile Include="Entity\ECFService\Common\CourtCodelistType.cs" />
+    <Compile Include="Entity\ECFService\Common\CourtEventDocumentType.cs" />
+    <Compile Include="Entity\ECFService\Common\CourtEventType.cs" />
+    <Compile Include="Entity\ECFService\Common\CourtExtensionType.cs" />
+    <Compile Include="Entity\ECFService\Common\CourtOrderType.cs" />
+    <Compile Include="Entity\ECFService\Common\CourtPolicyQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\CourtType.cs" />
+    <Compile Include="Entity\ECFService\Common\CreateCaseCallbackMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\CreateCaseMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\CreditAccountType.cs" />
+    <Compile Include="Entity\ECFService\Common\CreditedQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\CreditLineAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\CreditNoteLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\CurrencyCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\CurrencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CurrentChargeTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CurrentChargeTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CustomerAssignedAccountIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\CustomerPartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\CustomerReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\CustomizationIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\CustomsClearanceServiceInstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\CustomsImportClassifiedIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\CustomsStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\CustomsTariffQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\CV2IDType.cs" />
+    <Compile Include="Entity\ECFService\Common\DamageRemarksType.cs" />
+    <Compile Include="Entity\ECFService\Common\DangerousGoodsApprovedIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\DataSendingCapabilityType.cs" />
+    <Compile Include="Entity\ECFService\Common\DataSourceCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\date.cs" />
+    <Compile Include="Entity\ECFService\Common\DateRangeType.cs" />
+    <Compile Include="Entity\ECFService\Common\dateTime.cs" />
+    <Compile Include="Entity\ECFService\Common\DateType.cs" />
+    <Compile Include="Entity\ECFService\Common\DateType1.cs" />
+    <Compile Include="Entity\ECFService\Common\DateType2.cs" />
+    <Compile Include="Entity\ECFService\Common\DebitedQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\DebitLineAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\DebitNoteLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\DecedentEstateCaseType.cs" />
+    <Compile Include="Entity\ECFService\Common\decimal.cs" />
+    <Compile Include="Entity\ECFService\Common\DeclarationType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeclarationTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeclaredCarriageValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeclaredCustomsValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeclaredForCarriageValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeclaredStatisticsValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\DelinquentActType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeliveredQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeliveryInstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeliveryTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeliveryType.cs" />
+    <Compile Include="Entity\ECFService\Common\DeliveryUnitType.cs" />
+    <Compile Include="Entity\ECFService\Common\DemurrageInstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\DepartmentType.cs" />
+    <Compile Include="Entity\ECFService\Common\DependencyAllegationType.cs" />
+    <Compile Include="Entity\ECFService\Common\DependentPriceReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\DescriptionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\DespatchAdviceTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DespatchLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\DespatchType.cs" />
+    <Compile Include="Entity\ECFService\Common\DevelopmentPolicyParametersType.cs" />
+    <Compile Include="Entity\ECFService\Common\DifferenceTemperatureReductionQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\DigestMethodType.cs" />
+    <Compile Include="Entity\ECFService\Common\DimensionType.cs" />
+    <Compile Include="Entity\ECFService\Common\DirectionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DisplayTacticTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DispositionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DispositionType.cs" />
+    <Compile Include="Entity\ECFService\Common\DistrictType.cs" />
+    <Compile Include="Entity\ECFService\Common\DNALocusType.cs" />
+    <Compile Include="Entity\ECFService\Common\DNAType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentAttachmentType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentCourtAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentCurrencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentDistributionType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentHashType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentMetadataType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentOptionalServiceType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentRenditionMetadataType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentRenditionType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentResponseMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentResponseType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentSignatureType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentType1.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DocumentTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DomesticCaseChildSupportPetitionType.cs" />
+    <Compile Include="Entity\ECFService\Common\DomesticCaseObligationType.cs" />
+    <Compile Include="Entity\ECFService\Common\DomesticCaseOrderType.cs" />
+    <Compile Include="Entity\ECFService\Common\DomesticCaseViolencePetitionType.cs" />
+    <Compile Include="Entity\ECFService\Common\DriverLicenseAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\DriverLicenseBaseType.cs" />
+    <Compile Include="Entity\ECFService\Common\DriverLicenseClassCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\DriverLicenseClassCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DriverLicenseType.cs" />
+    <Compile Include="Entity\ECFService\Common\DriverLicenseWithdrawalType.cs" />
+    <Compile Include="Entity\ECFService\Common\DrivingIncidentType.cs" />
+    <Compile Include="Entity\ECFService\Common\DrivingIncidentType1.cs" />
+    <Compile Include="Entity\ECFService\Common\DrivingRestrictionCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\DrivingRestrictionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DrivingRestrictionType.cs" />
+    <Compile Include="Entity\ECFService\Common\DSAKeyValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\DueDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\duration.cs" />
+    <Compile Include="Entity\ECFService\Common\DurationMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\DutyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\DutyType.cs" />
+    <Compile Include="Entity\ECFService\Common\DutyType1.cs" />
+    <Compile Include="Entity\ECFService\Common\EarliestPickupDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\EarliestPickupTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\EconomicOperatorRegistryURIType.cs" />
+    <Compile Include="Entity\ECFService\Common\EconomicOperatorShortListType.cs" />
+    <Compile Include="Entity\ECFService\Common\EffectiveDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\EffectiveTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ElectronicDeviceDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ElectronicFilingCallbackMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\ElectronicFilingMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\ElectronicMailType.cs" />
+    <Compile Include="Entity\ECFService\Common\ElectronicServiceInformationType.cs" />
+    <Compile Include="Entity\ECFService\Common\EmbeddedDocumentBinaryObjectType.cs" />
+    <Compile Include="Entity\ECFService\Common\EmergencyProceduresCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\EmployeeQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\EncodingCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\EndDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\EndorsementType.cs" />
+    <Compile Include="Entity\ECFService\Common\EndorserPartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\EndpointIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\EndTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\EnergyTaxReportType.cs" />
+    <Compile Include="Entity\ECFService\Common\EnergyWaterSupplyType.cs" />
+    <Compile Include="Entity\ECFService\Common\EnforcementOfficialType.cs" />
+    <Compile Include="Entity\ECFService\Common\EnforcementUnitType.cs" />
+    <Compile Include="Entity\ECFService\Common\EntityType.cs" />
+    <Compile Include="Entity\ECFService\Common\EnvironmentalEmissionType.cs" />
+    <Compile Include="Entity\ECFService\Common\EnvironmentalEmissionTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ErrorType.cs" />
+    <Compile Include="Entity\ECFService\Common\EstimatedConsumedQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\EstimatedDeliveryDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\EstimatedDeliveryTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\EstimatedDespatchDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\EstimatedDespatchTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\EstimatedOverallContractAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\EstimatedOverallContractQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\EthnicityCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\EthnicityCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\EvaluationCriteriaType.cs" />
+    <Compile Include="Entity\ECFService\Common\EvaluationCriteriaTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\EventCommentType.cs" />
+    <Compile Include="Entity\ECFService\Common\EventLineItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\EventTacticEnumerationType.cs" />
+    <Compile Include="Entity\ECFService\Common\EventTacticType.cs" />
+    <Compile Include="Entity\ECFService\Common\EventType.cs" />
+    <Compile Include="Entity\ECFService\Common\EvidenceSuppliedIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\EvidenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\EvidenceTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExceptionCriteriaLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExceptionNotificationLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExceptionResolutionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExceptionStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExchangeMarketIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExchangeRateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExclusionReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExecutionRequirementCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExemptionReasonCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExemptionReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\EXLCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\EXLCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExpectedOperatorQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExpectedQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExpenseCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExpiryDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExpiryTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExpressionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExtendedIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExtensionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ExternalReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\EYECodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\EYECodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FaceValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\FacilityType.cs" />
+    <Compile Include="Entity\ECFService\Common\FamilyKinshipCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\FamilyKinshipCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FamilyNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\FeatureTacticTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FeeAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\FeeDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\FiduciaryCaseType.cs" />
+    <Compile Include="Entity\ECFService\Common\FileNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\FilerInformationType.cs" />
+    <Compile Include="Entity\ECFService\Common\FilingStatusType.cs" />
+    <Compile Include="Entity\ECFService\Common\FinancialAccountType.cs" />
+    <Compile Include="Entity\ECFService\Common\FinancialGuaranteeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FinancialInstitutionType.cs" />
+    <Compile Include="Entity\ECFService\Common\FinancialObligationType.cs" />
+    <Compile Include="Entity\ECFService\Common\FinancingInstrumentCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FingerprintSetType.cs" />
+    <Compile Include="Entity\ECFService\Common\FingerprintType.cs" />
+    <Compile Include="Entity\ECFService\Common\FingerprintType1.cs" />
+    <Compile Include="Entity\ECFService\Common\FirstNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\FirstShipmentAvailibilityDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\FloorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ForecastExceptionCriteriaLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ForecastExceptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ForecastLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ForecastPurposeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ForecastRevisionLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ForecastTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FormatCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ForwarderServiceInstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\FPCCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\FPCCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FrameworkAgreementType.cs" />
+    <Compile Include="Entity\ECFService\Common\FreeOfChargeIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\FreeOnBoardValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\FreightForwarderAssignedIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\FreightRateClassCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FrequencyType.cs" />
+    <Compile Include="Entity\ECFService\Common\FrozenDocumentIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\FrozenPeriodDaysNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\FullnessIndicationCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FullTelephoneNumberType.cs" />
+    <Compile Include="Entity\ECFService\Common\FullyPaidSharesIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\FundingProgramCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\FundingProgramType.cs" />
+    <Compile Include="Entity\ECFService\Common\GasPressureQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\GenderCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\GeneralCargoIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\GoodsItemContainerType.cs" />
+    <Compile Include="Entity\ECFService\Common\GoodsItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\GovernmentAgreementConstraintIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\GraphicType.cs" />
+    <Compile Include="Entity\ECFService\Common\GrossVolumeMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\GrossWeightMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\GuaranteedDespatchDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\GuaranteedDespatchTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\GuaranteeTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\GuardianAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\GuardianAssociationType1.cs" />
+    <Compile Include="Entity\ECFService\Common\gYear.cs" />
+    <Compile Include="Entity\ECFService\Common\HAICodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\HAICodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\HandlingCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\HandlingInstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\HashAlgorithmMethodType.cs" />
+    <Compile Include="Entity\ECFService\Common\HaulageInstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\HazardClassIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\HazardousCategoryCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\HazardousGoodsTransitType.cs" />
+    <Compile Include="Entity\ECFService\Common\HazardousItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\HazardousRegulationCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\HazardousRiskIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\HazMatCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\HazMatCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\HeatingTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\HeatingTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\HigherTenderAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\HolderNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\HumanFoodApprovedIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\HumanFoodIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\HumidityPercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\IdentificationCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\IdentificationIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\IdentificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\IdentifierType.cs" />
+    <Compile Include="Entity\ECFService\Common\IdentifierType1.cs" />
+    <Compile Include="Entity\ECFService\Common\IDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ImageType.cs" />
+    <Compile Include="Entity\ECFService\Common\ImmediateFamilyAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\ImmobilizationCertificateIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ImmobilizedSecurityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ImportanceCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\IncidentAugmentationType.cs" />
+    <Compile Include="Entity\ECFService\Common\IncidentType.cs" />
+    <Compile Include="Entity\ECFService\Common\IndicationIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\IndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\IndustryClassificationCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\InformationType.cs" />
+    <Compile Include="Entity\ECFService\Common\InformationURIType.cs" />
+    <Compile Include="Entity\ECFService\Common\InhalationToxicityZoneCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\InhouseMailType.cs" />
+    <Compile Include="Entity\ECFService\Common\InspectionMethodCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\InstallmentDueDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\InstructionForReturnsLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\InstructionIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\InstructionNoteType.cs" />
+    <Compile Include="Entity\ECFService\Common\InstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\InsurancePremiumAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\InsuranceType.cs" />
+    <Compile Include="Entity\ECFService\Common\InsuranceType1.cs" />
+    <Compile Include="Entity\ECFService\Common\InsuranceValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\InterestedProcurementLotsIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\InternationalTelephoneNumberType.cs" />
+    <Compile Include="Entity\ECFService\Common\InventoryReportLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\InventoryValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\InvoicedQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\InvoiceLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\InvoiceTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\InvoicingPartyReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\IssueDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\IssueNumberIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\IssuerIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\IssueTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemChoiceType1.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemClassificationCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemComparisonType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemIdentificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemInformationRequestLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemInstanceType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemLocationQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemManagementProfileType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemPropertyGroupType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemPropertyRangeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemPropertyType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemRegistrationType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemsChoiceType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemsChoiceType1.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemsChoiceType2.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemsChoiceType3.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemType1.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemUpdateRequestIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ItemValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\JobTitleType.cs" />
+    <Compile Include="Entity\ECFService\Common\JourneyIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\JudicialOfficialBarMembershipType.cs" />
+    <Compile Include="Entity\ECFService\Common\JudicialOfficialType.cs" />
+    <Compile Include="Entity\ECFService\Common\JurisdictionType.cs" />
+    <Compile Include="Entity\ECFService\Common\JustificationDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\JustificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\JuvenileType.cs" />
+    <Compile Include="Entity\ECFService\Common\KeyInfoType.cs" />
+    <Compile Include="Entity\ECFService\Common\KeyValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\KeywordType.cs" />
+    <Compile Include="Entity\ECFService\Common\LanguageCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\LanguageCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LanguageIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\LanguageType.cs" />
+    <Compile Include="Entity\ECFService\Common\LastRevisionDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\LastRevisionTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatestDeliveryDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatestDeliveryTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatestMeterQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatestMeterReadingDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatestPickupDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatestPickupTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatestProposalAcceptanceDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatitudeDegreesMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatitudeDirectionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LatitudeMinutesMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\LeadTimeMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\LegalFormType.cs" />
+    <Compile Include="Entity\ECFService\Common\LegalReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\LegalStatusIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\LengthCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\LengthCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LengthMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\LiabilityAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\LicensePlateIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\LifeCycleStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LimitationDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\LineCountNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\LineExtensionAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\LineIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\LineItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\LineNumberNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\LineReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\LineResponseType.cs" />
+    <Compile Include="Entity\ECFService\Common\LineStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ListValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\LivestockIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\LoadingLengthMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\LoadingSequenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\LocaleCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LocationCoordinateType.cs" />
+    <Compile Include="Entity\ECFService\Common\LocationIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\LocationType.cs" />
+    <Compile Include="Entity\ECFService\Common\LocationType1.cs" />
+    <Compile Include="Entity\ECFService\Common\LocationTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LoginType.cs" />
+    <Compile Include="Entity\ECFService\Common\LogoReferenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\LongitudeDegreesMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\LongitudeDirectionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LongitudeMinutesMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\LossRiskResponsibilityCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\LossRiskType.cs" />
+    <Compile Include="Entity\ECFService\Common\LotIdentificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\LotNumberIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\LowerOrangeHazardPlacardIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\LowerTenderAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\LowTendersDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\MandateTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ManifestType.cs" />
+    <Compile Include="Entity\ECFService\Common\ManufactureDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ManufactureTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaritimeTransportType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarkAttentionIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarkAttentionType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarkCareIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarkCareType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarketValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarkingIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarriageAssociationAugmentationType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarriageAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarriageCategoryCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarriageCategoryCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MarriageStatusType.cs" />
+    <Compile Include="Entity\ECFService\Common\MassCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\MassCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MatchingFilingType.cs" />
+    <Compile Include="Entity\ECFService\Common\MathematicOperatorCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumAdvertisementAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumBackorderQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumCopiesNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumNumberNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumOperatorQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumOrderQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumPaidAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumPaymentInstructionsNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumTaxExclusiveAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumTaxInclusiveAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\MaximumVariantQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeasureType1.cs" />
+    <Compile Include="Entity\ECFService\Common\MeasureType2.cs" />
+    <Compile Include="Entity\ECFService\Common\MeasureType3.cs" />
+    <Compile Include="Entity\ECFService\Common\MedicalFirstAidGuideCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MetadataType.cs" />
+    <Compile Include="Entity\ECFService\Common\MetadataType1.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterConstantCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterConstantType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterNumberType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterPropertyType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterReadingCommentsType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterReadingMethodCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterReadingMethodType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterReadingType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterReadingTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterReadingTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MeterType.cs" />
+    <Compile Include="Entity\ECFService\Common\MiddleNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\MimeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MinimumAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\MinimumBackorderQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MinimumImprovementBidType.cs" />
+    <Compile Include="Entity\ECFService\Common\MinimumInventoryQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MinimumMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\MinimumNumberNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\MinimumOrderQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MinimumQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MinimumValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\MiscellaneousEventType.cs" />
+    <Compile Include="Entity\ECFService\Common\MiscellaneousEventTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ModelNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\MonetaryScopeType.cs" />
+    <Compile Include="Entity\ECFService\Common\MonetaryTotalType.cs" />
+    <Compile Include="Entity\ECFService\Common\MovieTitleType.cs" />
+    <Compile Include="Entity\ECFService\Common\MultipleOrderQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\MultiplierFactorNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\NameCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\NameSuffixType.cs" />
+    <Compile Include="Entity\ECFService\Common\NameType.cs" />
+    <Compile Include="Entity\ECFService\Common\NameType1.cs" />
+    <Compile Include="Entity\ECFService\Common\NANPTelephoneNumberType.cs" />
+    <Compile Include="Entity\ECFService\Common\NationalityIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\NatureCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\NegotiationDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\NetNetWeightMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\NetVolumeMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\NetWeightMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\NetworkIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\NominationDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\NominationTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\NonNegativeDecimalType.cs" />
+    <Compile Include="Entity\ECFService\Common\NormalTemperatureReductionQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\NoteType.cs" />
+    <Compile Include="Entity\ECFService\Common\NotificationRequirementType.cs" />
+    <Compile Include="Entity\ECFService\Common\NotificationTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\NumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\NumericType1.cs" />
+    <Compile Include="Entity\ECFService\Common\NumericType2.cs" />
+    <Compile Include="Entity\ECFService\Common\ObjectType.cs" />
+    <Compile Include="Entity\ECFService\Common\ObligationExemptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ObligationRecurrenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\ObligationType.cs" />
+    <Compile Include="Entity\ECFService\Common\OccurrenceDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\OccurrenceTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\OFFCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\OFFCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\OnAccountPaymentType.cs" />
+    <Compile Include="Entity\ECFService\Common\OnCarriageIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\OneTimeChargeTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\OneTimeChargeTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\OntologyURIType.cs" />
+    <Compile Include="Entity\ECFService\Common\OpenTenderIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\OperatingYearsQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\OperationNameSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\OperationNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\OperationStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\OptionalLineItemIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\OptionsDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderableIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderableUnitFactorRateType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderableUnitType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderedShipmentType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderIntervalDaysNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderLineReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderQuantityIncrementNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderResponseCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrderTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrganizationAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrganizationAssociationType1.cs" />
+    <Compile Include="Entity\ECFService\Common\OrganizationAugmentationType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrganizationAugmentationType1.cs" />
+    <Compile Include="Entity\ECFService\Common\OrganizationContactInformationAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrganizationDepartmentType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrganizationIdentificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\OrganizationType.cs" />
+    <Compile Include="Entity\ECFService\Common\OriginalContractingSystemIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\OriginalJobIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\OtherInstructionType.cs" />
+    <Compile Include="Entity\ECFService\Common\OutstandingQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\OutstandingReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\OversupplyQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\OwnerTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PackageLevelCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PackageType.cs" />
+    <Compile Include="Entity\ECFService\Common\PackagingTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PackingCriteriaCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PackingMaterialType.cs" />
+    <Compile Include="Entity\ECFService\Common\PackLevelCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PackQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\PackSizeNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaidAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaidDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaidTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ParentDocumentIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ParentDocumentLineReferenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ParentDocumentTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ParentDocumentVersionIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ParkingViolationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PartecipationPercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\PartialDeliveryIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ParticipationPercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\PartPresentationCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PartyCapacityAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\PartyIdentificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PartyLegalEntityType.cs" />
+    <Compile Include="Entity\ECFService\Common\PartyNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\PartyTaxSchemeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\PasswordType.cs" />
+    <Compile Include="Entity\ECFService\Common\PayableAlternativeAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\PayableAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\PayableRoundingAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\PayerReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentAlternativeCurrencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentChannelCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentCurrencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentDueDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentFrequencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentMandateType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentMeansCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentMeansIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentMeansType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentNoteType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentOrderReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentPercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentPurposeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentTermsDetailsURIType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentType.cs" />
+    <Compile Include="Entity\ECFService\Common\PaymentType1.cs" />
+    <Compile Include="Entity\ECFService\Common\PayPerViewType.cs" />
+    <Compile Include="Entity\ECFService\Common\PenaltyAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\PenaltyClausesType.cs" />
+    <Compile Include="Entity\ECFService\Common\PenaltySurchargePercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\PercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\PercentType1.cs" />
+    <Compile Include="Entity\ECFService\Common\PerformanceDataLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\PerformanceMetricTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PerformanceValueQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\PerformingCarrierAssignedIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\PeriodType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonalSituationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonAssociationType1.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonAugmentationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonAugmentationType1.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonChargeAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonContactInformationAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonEmploymentAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonFiduciaryAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonLanguageType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonNameTextType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonOrganizationAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonOrganizationAssociationType1.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonType.cs" />
+    <Compile Include="Entity\ECFService\Common\PersonUnionAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PerUnitAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\PGPDataType.cs" />
+    <Compile Include="Entity\ECFService\Common\PhoneNumberType.cs" />
+    <Compile Include="Entity\ECFService\Common\PhysicalAttributeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PhysicalFeatureType.cs" />
+    <Compile Include="Entity\ECFService\Common\PickupType.cs" />
+    <Compile Include="Entity\ECFService\Common\PictureType.cs" />
+    <Compile Include="Entity\ECFService\Common\PlacardEndorsementType.cs" />
+    <Compile Include="Entity\ECFService\Common\PlacardNotationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PlacementAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PlannedDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\PlotIdentificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PositionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PostalZoneType.cs" />
+    <Compile Include="Entity\ECFService\Common\PostboxType.cs" />
+    <Compile Include="Entity\ECFService\Common\PowerIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\PowerOfAttorneyType.cs" />
+    <Compile Include="Entity\ECFService\Common\PreCarriageIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\PreferenceCriterionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PrepaidAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\PrepaidIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\PrepaidPaymentReferenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\PreviousCancellationReasonCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PreviousJobIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\PreviousMeterQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\PreviousMeterReadingDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\PreviousVersionIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\PriceAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\PriceChangeReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\PriceEvaluationCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PriceListType.cs" />
+    <Compile Include="Entity\ECFService\Common\PriceRevisionFormulaDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\PriceType.cs" />
+    <Compile Include="Entity\ECFService\Common\PriceTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PriceTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PricingCurrencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PricingReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\PricingUpdateRequestIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\PrimaryAccountNumberIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\PrintQualifierType.cs" />
+    <Compile Include="Entity\ECFService\Common\PriorityType.cs" />
+    <Compile Include="Entity\ECFService\Common\PrivacyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcedureCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcedureRemedyType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcessDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcessJustificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcessReasonCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcessReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcurementProjectLotIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcurementProjectLotType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcurementProjectType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcurementSubTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProcurementTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProductTraceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProfileExecutionIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProfileIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProfileStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PromotionalEventLineItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\PromotionalEventType.cs" />
+    <Compile Include="Entity\ECFService\Common\PromotionalEventTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PromotionalSpecificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProperNameTextType.cs" />
+    <Compile Include="Entity\ECFService\Common\PropertyAugmentationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PropertyType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProviderChargeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ProviderTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PublicKeyInformationType.cs" />
+    <Compile Include="Entity\ECFService\Common\PurposeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\PurposeType.cs" />
+    <Compile Include="Entity\ECFService\Common\QualificationResolutionType.cs" />
+    <Compile Include="Entity\ECFService\Common\QualifyingPartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\QualityControlCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\QuantityDiscrepancyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\QuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\QuantityType1.cs" />
+    <Compile Include="Entity\ECFService\Common\QuantityType2.cs" />
+    <Compile Include="Entity\ECFService\Common\QueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\QuotationLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\RACCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\RACCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RailCarIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\RailTransportType.cs" />
+    <Compile Include="Entity\ECFService\Common\RateType.cs" />
+    <Compile Include="Entity\ECFService\Common\RateType1.cs" />
+    <Compile Include="Entity\ECFService\Common\ReceiptLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReceivedDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReceivedQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReceivedTenderQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\RecordDocketingCallbackMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\RecordDocketingMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\RecordFilingRequestMessageType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReferenceDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReferencedConsignmentIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReferenceEventCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReferenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReferenceTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReferenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReferenceType1.cs" />
+    <Compile Include="Entity\ECFService\Common\ReferenceType2.cs" />
+    <Compile Include="Entity\ECFService\Common\RefrigeratedIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\RefrigerationOnIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegionType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegisteredDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegisteredOffenderType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegisteredTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegistrationDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegistrationExpirationDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegistrationIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegistrationNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegistrationNationalityIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegistrationNationalityType.cs" />
+    <Compile Include="Entity\ECFService\Common\RegulationType.cs" />
+    <Compile Include="Entity\ECFService\Common\RejectActionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RejectedQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\RejectionNoteType.cs" />
+    <Compile Include="Entity\ECFService\Common\RejectReasonCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RejectReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\RelatedActivityAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\RelatedCaseAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\RelatedItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReleaseIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReliabilityPercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\RemarksType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReminderLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReminderSequenceNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReminderTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RemittanceAdviceLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\RenewalType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReplenishmentOwnerDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequestedDeliveryDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequestedDespatchDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequestedDespatchTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequestedInvoiceCurrencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequestedPublicationDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequestForQuotationLineIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequestForQuotationLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequestForTenderLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequiredCurriculaIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequiredCustomsIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequiredDeliveryDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequiredDeliveryTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RequiredFeeAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResidenceTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResidenceTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResidentOccupantsNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResolutionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResolutionDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResolutionTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResolutionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResponseCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResponseDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResponseTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResponseType.cs" />
+    <Compile Include="Entity\ECFService\Common\ResultOfVerificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\RetailEventNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\RetailEventStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RetailPlannedImpactType.cs" />
+    <Compile Include="Entity\ECFService\Common\RetrievalMethodType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReturnabilityIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReturnableMaterialIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReturnableQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ReviewedDocumentType.cs" />
+    <Compile Include="Entity\ECFService\Common\RevisedForecastLineIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\RevisionDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\RevisionStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RevisionTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RoadTransportType.cs" />
+    <Compile Include="Entity\ECFService\Common\RoamingPartnerNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\RoleCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\RoomType.cs" />
+    <Compile Include="Entity\ECFService\Common\RoundingAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\RSAKeyValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\RuntimePolicyParametersType.cs" />
+    <Compile Include="Entity\ECFService\Common\SalesItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\SalesOrderIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SalesOrderLineIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ScheduleDayType.cs" />
+    <Compile Include="Entity\ECFService\Common\SchemeURIType.cs" />
+    <Compile Include="Entity\ECFService\Common\SealingPartyTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SealIssuerTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SealStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SecondaryHazardType.cs" />
+    <Compile Include="Entity\ECFService\Common\SecurityClassificationCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SecurityIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SellerEventIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SentenceType.cs" />
+    <Compile Include="Entity\ECFService\Common\SentenceType1.cs" />
+    <Compile Include="Entity\ECFService\Common\SequenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SequenceNumberIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SequenceNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\SerialIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ServiceContactIdentificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\ServiceNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\ServiceNumberCalledType.cs" />
+    <Compile Include="Entity\ECFService\Common\ServicePointType.cs" />
+    <Compile Include="Entity\ECFService\Common\ServiceProviderPartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\ServiceRecipientDetailType.cs" />
+    <Compile Include="Entity\ECFService\Common\ServiceRecipientStatusType.cs" />
+    <Compile Include="Entity\ECFService\Common\ServiceTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ServiceTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SettlementDiscountAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\SettlementDiscountPercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\SeverityLevelType.cs" />
+    <Compile Include="Entity\ECFService\Common\SEXCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\SEXCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ShareholderPartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\SharesNumberQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ShipmentStageType.cs" />
+    <Compile Include="Entity\ECFService\Common\ShipmentType.cs" />
+    <Compile Include="Entity\ECFService\Common\ShippingMarksType.cs" />
+    <Compile Include="Entity\ECFService\Common\ShippingOrderIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ShippingPriorityLevelCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ShortageActionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ShortQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\SignatureIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SignatureMethodType.cs" />
+    <Compile Include="Entity\ECFService\Common\SignatureMethodType1.cs" />
+    <Compile Include="Entity\ECFService\Common\SignaturePropertiesType.cs" />
+    <Compile Include="Entity\ECFService\Common\SignaturePropertyType.cs" />
+    <Compile Include="Entity\ECFService\Common\SignatureType.cs" />
+    <Compile Include="Entity\ECFService\Common\SignatureType1.cs" />
+    <Compile Include="Entity\ECFService\Common\SignatureType2.cs" />
+    <Compile Include="Entity\ECFService\Common\SignatureValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\SignedInfoType.cs" />
+    <Compile Include="Entity\ECFService\Common\SizeTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SMTCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\SMTCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SoleProprietorshipIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\SoundType.cs" />
+    <Compile Include="Entity\ECFService\Common\SourceCurrencyBaseRateType.cs" />
+    <Compile Include="Entity\ECFService\Common\SourceCurrencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SourceForecastIssueDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\SourceForecastIssueTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SourceValueMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\SpecialInstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\SpecialSecurityIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\SpecialServiceInstructionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\SpecialTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\SpecialTransportRequirmentsType.cs" />
+    <Compile Include="Entity\ECFService\Common\SpecificationIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SpecificationTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SpeedMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\SPKIDataType.cs" />
+    <Compile Include="Entity\ECFService\Common\SplitConsignmentIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\StartDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\StartTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\StatementLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\StatementTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\StatusAvailableIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\StatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\StatusOffenseActType.cs" />
+    <Compile Include="Entity\ECFService\Common\StatusReasonCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\StatusReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\StatusType.cs" />
+    <Compile Include="Entity\ECFService\Common\StatusType1.cs" />
+    <Compile Include="Entity\ECFService\Common\StatuteType.cs" />
+    <Compile Include="Entity\ECFService\Common\StockAvailabilityReportLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\StowageType.cs" />
+    <Compile Include="Entity\ECFService\Common\StreetNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\StreetType.cs" />
+    <Compile Include="Entity\ECFService\Common\string.cs" />
+    <Compile Include="Entity\ECFService\Common\StructuredAddressType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubcontractTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubjectType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubjectType1.cs" />
+    <Compile Include="Entity\ECFService\Common\SubjectType2.cs" />
+    <Compile Include="Entity\ECFService\Common\SubjectType3.cs" />
+    <Compile Include="Entity\ECFService\Common\SubmissionDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubmissionDueDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubmissionMethodCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubscriberConsumptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubscriberIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubscriberIDTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubscriberIDTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubscriberTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubscriberTypeIdentifierType.cs" />
+    <Compile Include="Entity\ECFService\Common\SubstitutionStatusCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\SuccessiveSequenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SummaryDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\SupervisionType.cs" />
+    <Compile Include="Entity\ECFService\Common\SupplierAssignedAccountIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\SupplierConsumptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\SupplierPartyType.cs" />
+    <Compile Include="Entity\ECFService\Common\SupplyChainActivityTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TangibleItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\TareWeightMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\TargetCurrencyBaseRateType.cs" />
+    <Compile Include="Entity\ECFService\Common\TargetCurrencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TargetInventoryQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\TargetServicePercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\TariffClassCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TariffCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TariffDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxableAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxCategoryType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxCurrencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxEnergyAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxEnergyBalanceAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxEnergyOnAccountAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxEvidenceIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxExclusiveAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxExemptionReasonCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxExemptionReasonType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxIncludedIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxInclusiveAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxLevelCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxPointDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxSchemeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxSubtotalType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxTotalType.cs" />
+    <Compile Include="Entity\ECFService\Common\TaxTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TechnicalCommitteeDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\TechnicalNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelecommunicationsServiceCallCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelecommunicationsServiceCallType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelecommunicationsServiceCategoryCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelecommunicationsServiceCategoryType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelecommunicationsServiceType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelecommunicationsSupplyLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelecommunicationsSupplyType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelecommunicationsSupplyTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelecommunicationsSupplyTypeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelefaxType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelephoneNumberType.cs" />
+    <Compile Include="Entity\ECFService\Common\TelephoneType.cs" />
+    <Compile Include="Entity\ECFService\Common\TemperatureType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderedProjectType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderEnvelopeIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderEnvelopeTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TendererPartyQualificationType.cs" />
+    <Compile Include="Entity\ECFService\Common\TendererQualificationRequestType.cs" />
+    <Compile Include="Entity\ECFService\Common\TendererRequirementType.cs" />
+    <Compile Include="Entity\ECFService\Common\TendererRequirementTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderingProcessType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderingTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderLineType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderPreparationType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderRequirementType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderResultCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderResultType.cs" />
+    <Compile Include="Entity\ECFService\Common\TenderTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TermType.cs" />
+    <Compile Include="Entity\ECFService\Common\TestMethodType.cs" />
+    <Compile Include="Entity\ECFService\Common\TextType.cs" />
+    <Compile Include="Entity\ECFService\Common\TextType1.cs" />
+    <Compile Include="Entity\ECFService\Common\TextType2.cs" />
+    <Compile Include="Entity\ECFService\Common\TextType3.cs" />
+    <Compile Include="Entity\ECFService\Common\ThirdPartyPayerIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\ThresholdAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\ThresholdQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ThresholdValueComparisonCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TierRangeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TierRatePercentType.cs" />
+    <Compile Include="Entity\ECFService\Common\time.cs" />
+    <Compile Include="Entity\ECFService\Common\TimeAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TimeDeltaDaysQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\TimeDeviationIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TimeFrequencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TimezoneOffsetType.cs" />
+    <Compile Include="Entity\ECFService\Common\TimingComplaintCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TimingComplaintType.cs" />
+    <Compile Include="Entity\ECFService\Common\TitleType.cs" />
+    <Compile Include="Entity\ECFService\Common\ToOrderIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalBalanceAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalConsumedQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalCreditAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalDebitAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalDeliveredQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalGoodsItemQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalInvoiceAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalMeteredQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalPackageQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalPackagesQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalPaymentAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalTaskAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalTaxAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TotalTransportHandlingUnitQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\TraceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\TrackingDeviceCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TrackingIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\TradeFinancingType.cs" />
+    <Compile Include="Entity\ECFService\Common\TradeItemPackingLabelingTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TradeServiceCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TradingRestrictionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\TradingTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\TrainIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransactionConditionsType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransactionCurrencyTaxAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransformType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransitDirectionCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportationSegmentType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportationServiceDescriptionType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportationServiceDetailsURIType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportationServiceType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportAuthorizationCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportEmergencyCardCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportEquipmentSealType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportEquipmentType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportEquipmentTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportEventType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportEventTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportExecutionPlanReferenceIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportExecutionTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportHandlingUnitType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportHandlingUnitTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportLocationType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportMeansType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportMeansTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportModeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportScheduleType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportServiceCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportServiceProviderCancellationIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportServiceProviderCompletionIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportServiceProviderReadyForExecutionIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportServiceProviderRemarksType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportServiceProviderSpecialTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportStatusType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportUserCancellationIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportUserCompletionIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportUserReadyForExecutionIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportUserRemarksType.cs" />
+    <Compile Include="Entity\ECFService\Common\TransportUserSpecialTermsType.cs" />
+    <Compile Include="Entity\ECFService\Common\TypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\UBLVersionIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\UNDGCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\UnknownPriceIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\UnstructuredPriceType.cs" />
+    <Compile Include="Entity\ECFService\Common\UpperOrangeHazardPlacardIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\UrgencyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\URIType.cs" />
+    <Compile Include="Entity\ECFService\Common\USCountyCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\USCountyCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\USStateCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\USStateCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\UtilityItemType.cs" />
+    <Compile Include="Entity\ECFService\Common\UtilityStatementTypeCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\UUIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValidateProcessType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValidateToolType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValidateToolVersionType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValidationDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValidationResultCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValidationTimeType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValidatorIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValidityStartDateType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValueAmountType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValueMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValueQualifierType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValueQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValueType.cs" />
+    <Compile Include="Entity\ECFService\Common\ValueType1.cs" />
+    <Compile Include="Entity\ECFService\Common\VarianceQuantityType.cs" />
+    <Compile Include="Entity\ECFService\Common\VariantConstraintIndicatorType.cs" />
+    <Compile Include="Entity\ECFService\Common\VariantIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\VCOCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\VCOCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\VehicleType.cs" />
+    <Compile Include="Entity\ECFService\Common\VehicleType1.cs" />
+    <Compile Include="Entity\ECFService\Common\VersionIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\VesselIDType.cs" />
+    <Compile Include="Entity\ECFService\Common\VesselNameType.cs" />
+    <Compile Include="Entity\ECFService\Common\VictimType.cs" />
+    <Compile Include="Entity\ECFService\Common\VideoType.cs" />
+    <Compile Include="Entity\ECFService\Common\ViolatedStatuteAssociationType.cs" />
+    <Compile Include="Entity\ECFService\Common\VMACodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\VMACodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\VMOCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\VMOCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\VSTCodeSimpleType.cs" />
+    <Compile Include="Entity\ECFService\Common\VSTCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\WarrantType.cs" />
+    <Compile Include="Entity\ECFService\Common\WarrantyInformationType.cs" />
+    <Compile Include="Entity\ECFService\Common\WebSiteAccessType.cs" />
+    <Compile Include="Entity\ECFService\Common\WebsiteURIType.cs" />
+    <Compile Include="Entity\ECFService\Common\WeightingAlgorithmCodeType.cs" />
+    <Compile Include="Entity\ECFService\Common\WeightMeasureType.cs" />
+    <Compile Include="Entity\ECFService\Common\WeightNumericType.cs" />
+    <Compile Include="Entity\ECFService\Common\WeightType.cs" />
+    <Compile Include="Entity\ECFService\Common\X509DataType.cs" />
+    <Compile Include="Entity\ECFService\Common\X509IssuerSerialType.cs" />
+    <Compile Include="Entity\ECFService\Common\XPathType.cs" />
+    <Compile Include="Entity\ECFService\CoreFilingMessageType.cs" />
+    <Compile Include="Entity\ECFService\CourtPolicyQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\EventCallbackMessageType.cs" />
+    <Compile Include="Entity\ECFService\FeesCalculationQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\FilingDetailQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\FilingListQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\FilingReviewMDEPortEntity.cs" />
+    <Compile Include="Entity\ECFService\FilingReviewWrapperEntity.cs" />
+    <Compile Include="Entity\ECFService\FilingServiceQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\FilingStatusQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\NotifyFilingReviewCompleteResponse.cs" />
+    <Compile Include="Entity\ECFService\ReturnDateRequestType.cs" />
+    <Compile Include="Entity\ECFService\ReviewFilingCallbackMessageType.cs" />
+    <Compile Include="Entity\ECFService\ReviewFilingRequestMessageType.cs" />
+    <Compile Include="Entity\ECFService\ServiceAttachCaseListQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\ServiceInformationHistoryQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\ServiceInformationQueryMessageType.cs" />
+    <Compile Include="Entity\ECFService\ServiceReceiptMessageType.cs" />
+    <Compile Include="Entity\EFMCaseCategoryLookup.cs" />
+    <Compile Include="Entity\EFMCaseTypeLookup.cs" />
+    <Compile Include="Entity\EFMCredentials.cs" />
+    <Compile Include="Entity\EFMCrossReferenceCode.cs" />
+    <Compile Include="Entity\EfmDocumentTypeCode.cs" />
+    <Compile Include="Entity\EfmErrorType.cs" />
+    <Compile Include="Entity\EfmFileTypeLookup.cs" />
+    <Compile Include="Entity\EFMFilingCodeLookup.cs" />
+    <Compile Include="Entity\EfmFilingComponentCode.cs" />
+    <Compile Include="Entity\EfmFilingLookup.cs" />
+    <Compile Include="Entity\EFMJudicialOfficerLookup.cs" />
+    <Compile Include="Entity\EFMLocationLookup.cs" />
+    <Compile Include="Entity\EfmPartyTypeLookup.cs" />
+    <Compile Include="Entity\EFMSimpleCodeListEntity.cs" />
+    <Compile Include="Entity\EfmStateCode.cs" />
+    <Compile Include="Entity\FilingStatusCode.cs" />
+    <Compile Include="Entity\LocationPolicy.cs" />
+    <Compile Include="Entity\Redaction\TylerRedactionDocument.cs" />
+    <Compile Include="Entity\Redaction\TylerRedactionEntity.cs" />
+    <Compile Include="Entity\Redaction\TylerRedactionOcrSource.cs" />
+    <Compile Include="Entity\Redaction\TylerRedactionPersonAddress.cs" />
+    <Compile Include="Entity\Redaction\TylerRedactionPersonName.cs" />
+    <Compile Include="Entity\Redaction\TylerRedactionRegion.cs" />
+    <Compile Include="Entity\Redaction\TylerRedactionScaleInteger2D.cs" />
+    <Compile Include="Entity\Redaction\TylerRedactionScanStatus.cs" />
+    <Compile Include="Entity\Redaction\TylerRedactionSettings.cs" />
+    <Compile Include="Entity\Request\EFMLoginEntity.cs" />
+    <Compile Include="Entity\Response\EFMFilerEntity.cs" />
+    <Compile Include="Entity\SOAPAction.cs" />
+    <Compile Include="Entity\v5ECFService\Common\CaseAugmentationType.cs" />
+    <Compile Include="Entity\v5ECFService\Common\CommonType.cs" />
+    <Compile Include="Entity\v5ECFService\Common\SystemOperatingModeCodeType.cs" />
+    <Compile Include="Entity\v5ECFService\NotifyCourtDateMessageType.cs" />
+    <Compile Include="Entity\v5ECFService\ReserveCourtDateMessageType.cs" />
+    <Compile Include="Entity\v5ECFService\ReserveDateResponseMessageType.cs" />
+    <Compile Include="Entity\v5ECFService\ReturnDateMessageType.cs" />
+    <Compile Include="Entity\v5ECFService\ReturnDateResponseMessageType.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User\UserLoginRequestModel.cs" />
+    <Compile Include="Models\User\UserLoginResponseModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wrappers\Interface\IUserServiceWrapper.cs" />
+    <Compile Include="Wrappers\UserServiceWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\EFMUserServices\EfmUserService.wsdl" />
+    <None Include="Connected Services\EFMUserServices\EFMUserService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService22.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService23.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService24.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService25.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService26.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService27.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService28.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService29.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService30.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService34.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService35.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService36.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService37.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService38.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService39.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService40.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EFMUserServices\EFMUserService9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\EFMUserServices\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54096</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44378/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
