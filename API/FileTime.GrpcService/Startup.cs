@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FileTime.BAL;
+using FileTime.DapperDAL;
+using FileTime.EFM;
+using FileTime.IBAL;
+using FileTime.IDAL;
+using FileTime.IEFM;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -17,6 +23,7 @@ namespace FileTime.GrpcService
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddGrpc();
+			MappingModule(services);
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,6 +39,7 @@ namespace FileTime.GrpcService
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapGrpcService<GreeterService>();
+				endpoints.MapGrpcService<FilerService>();
 
 				endpoints.MapGet("/", async context =>
 				{
@@ -39,5 +47,15 @@ namespace FileTime.GrpcService
 				});
 			});
 		}
+
+
+		private void MappingModule(IServiceCollection services)
+		{
+			services.AddScoped<IFilerDAL, FilerDAL>();
+			services.AddScoped<IUserServiceWrapper, UserServiceWrapper>();
+			services.AddScoped<IFilerBAL, FilerBAL>();
+			
+		}
+
 	}
 }

@@ -6,10 +6,21 @@
 
   <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+	<Protobuf Include="Protos\filer.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\FileTime.BAL\FileTime.BAL.csproj" />
+    <ProjectReference Include="..\..\FileTime.DAO\FileTime.DAO.csproj" />
+    <ProjectReference Include="..\..\FileTime.DapperDAL\FileTime.DapperDAL.csproj" />
+    <ProjectReference Include="..\..\FileTime.EFM\FileTime.EFM.csproj" />
+    <ProjectReference Include="..\..\Interface\FileTime.IBAL\FileTime.IBAL.csproj" />
+    <ProjectReference Include="..\..\Interface\FileTime.IDAL\FileTime.IDAL.csproj" />
+    <ProjectReference Include="..\..\Interface\FileTime.IEFM\FileTime.IEFM.csproj" />
   </ItemGroup>
 
 </Project>
