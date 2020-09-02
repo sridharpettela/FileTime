@@ -13,25 +13,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.EFMApi", "API\File
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5B032A09-D752-4DF1-A4BA-B179FDA8D122}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.DapperDAL", "FileTime.DapperDAL\FileTime.DapperDAL.csproj", "{7A3B33EF-3647-446C-A82B-ED2BEDB56C8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.DapperDAL", "FileTime.DapperDAL\FileTime.DapperDAL.csproj", "{7A3B33EF-3647-446C-A82B-ED2BEDB56C8C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{1B8F0B03-17C8-4CF2-B262-87D318BEAB91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.IDAL", "Interface\FileTime.IDAL\FileTime.IDAL.csproj", "{DB9E142E-6C60-41DD-B09F-D2D80860C44D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.IDAL", "Interface\FileTime.IDAL\FileTime.IDAL.csproj", "{DB9E142E-6C60-41DD-B09F-D2D80860C44D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.DAO", "FileTime.DAO\FileTime.DAO.csproj", "{D4F019EE-FBBB-42FC-A163-61708FB9A8E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.DAO", "FileTime.DAO\FileTime.DAO.csproj", "{D4F019EE-FBBB-42FC-A163-61708FB9A8E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.EFM", "FileTime.EFM\FileTime.EFM.csproj", "{29536550-77C5-4D24-85D6-FDAECD95EE8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.EFM", "FileTime.EFM\FileTime.EFM.csproj", "{29536550-77C5-4D24-85D6-FDAECD95EE8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.IEFM", "Interface\FileTime.IEFM\FileTime.IEFM.csproj", "{EEE4EFAA-B848-470B-AEAD-C81CB4ACDB96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.IEFM", "Interface\FileTime.IEFM\FileTime.IEFM.csproj", "{EEE4EFAA-B848-470B-AEAD-C81CB4ACDB96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.IBAL", "Interface\FileTime.IBAL\FileTime.IBAL.csproj", "{20A2AFD9-4762-41AD-BEFC-05020E3851DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.IBAL", "Interface\FileTime.IBAL\FileTime.IBAL.csproj", "{20A2AFD9-4762-41AD-BEFC-05020E3851DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.BAL", "FileTime.BAL\FileTime.BAL.csproj", "{5C33AAAD-CB31-41AD-9977-D0EA52852EC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.BAL", "FileTime.BAL\FileTime.BAL.csproj", "{5C33AAAD-CB31-41AD-9977-D0EA52852EC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.GrpcService", "API\FileTime.GrpcService\FileTime.GrpcService.csproj", "{EFE35422-1120-4349-939B-7443D7874138}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.GrpcService", "API\FileTime.GrpcService\FileTime.GrpcService.csproj", "{EFE35422-1120-4349-939B-7443D7874138}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.GrpcService.ConsoleTest", "Tests\FileTime.GrpcService.ConsoleTest\FileTime.GrpcService.ConsoleTest.csproj", "{80885A94-7A20-448C-856D-B0B409C45CE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.GrpcService.ConsoleTest", "Tests\FileTime.GrpcService.ConsoleTest\FileTime.GrpcService.ConsoleTest.csproj", "{80885A94-7A20-448C-856D-B0B409C45CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.EFM.Test", "Tests\FileTime.EFM.Test\FileTime.EFM.Test.csproj", "{81A22E95-A148-4583-8207-8127CDDE9CA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{80885A94-7A20-448C-856D-B0B409C45CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80885A94-7A20-448C-856D-B0B409C45CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80885A94-7A20-448C-856D-B0B409C45CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81A22E95-A148-4583-8207-8127CDDE9CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A22E95-A148-4583-8207-8127CDDE9CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A22E95-A148-4583-8207-8127CDDE9CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A22E95-A148-4583-8207-8127CDDE9CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{20A2AFD9-4762-41AD-BEFC-05020E3851DD} = {1B8F0B03-17C8-4CF2-B262-87D318BEAB91}
 		{EFE35422-1120-4349-939B-7443D7874138} = {704C6BE8-75AC-4E8F-B411-6FC5967FFD2A}
 		{80885A94-7A20-448C-856D-B0B409C45CE5} = {5B032A09-D752-4DF1-A4BA-B179FDA8D122}
+		{81A22E95-A148-4583-8207-8127CDDE9CA3} = {5B032A09-D752-4DF1-A4BA-B179FDA8D122}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79A67FEC-BA83-4FF6-B208-88246CDA364B}
