@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d7bcbb91-1960-4af2-95a8-6140aaf76bde" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EFMFirmService.xsd" MetadataType="Schema" ID="6cb8bae3-8872-4f1c-bce4-5998b356df4f" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EFMFirmService1.xsd" MetadataType="Schema" ID="c1a47dc5-8710-4006-8a2d-43152afdc591" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EFMFirmService2.xsd" MetadataType="Schema" ID="34bf769b-90b5-4f56-8908-240e8d4b1810" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd31" />
+    <MetadataFile FileName="EFMFirmService3.xsd" MetadataType="Schema" ID="d39f28f3-bfe1-41b4-9143-c81a6ad727e8" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EFMFirmService4.xsd" MetadataType="Schema" ID="8d29baf8-2570-4ad8-8308-94f58d9c8f8b" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd21" />
+    <MetadataFile FileName="EFMFirmService5.xsd" MetadataType="Schema" ID="9f30e6d1-e503-4535-8624-1975e53fa009" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd55" />
+    <MetadataFile FileName="EFMFirmService6.xsd" MetadataType="Schema" ID="19fe66cd-3cd5-40dc-9365-76ba7b6c7ad8" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd41" />
+    <MetadataFile FileName="EFMFirmService7.xsd" MetadataType="Schema" ID="d0fb6280-3133-46f6-90c9-c3b8e2714818" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd17" />
+    <MetadataFile FileName="EFMFirmService8.xsd" MetadataType="Schema" ID="b734f8df-3752-430f-9d64-01630d2fbc65" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd24" />
+    <MetadataFile FileName="EFMFirmService9.xsd" MetadataType="Schema" ID="8f115c37-19d6-4749-904c-e37e51457a71" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd54" />
+    <MetadataFile FileName="EFMFirmService10.xsd" MetadataType="Schema" ID="c1c7c96f-c7a3-4836-8445-5b57f6193efd" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd37" />
+    <MetadataFile FileName="EFMFirmService11.xsd" MetadataType="Schema" ID="b7de2611-db60-4be9-a61c-0b48643bd9da" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd44" />
+    <MetadataFile FileName="EFMFirmService12.xsd" MetadataType="Schema" ID="2975ee02-1b23-4f27-bea1-bdb4aab3ebee" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd18" />
+    <MetadataFile FileName="EFMFirmService13.xsd" MetadataType="Schema" ID="a21be98b-07c8-4217-98b8-13d7db90bb9b" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EFMFirmService14.xsd" MetadataType="Schema" ID="f9e2600a-e38c-44c0-86e3-8cdd8e5eff57" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd11" />
+    <MetadataFile FileName="EFMFirmService15.xsd" MetadataType="Schema" ID="3701e2df-9ec6-4b88-a05b-005c8f902d22" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd14" />
+    <MetadataFile FileName="EFMFirmService16.xsd" MetadataType="Schema" ID="fd7e7e81-4970-4597-a700-faf5f5821b13" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd25" />
+    <MetadataFile FileName="EfmFirmService.wsdl" MetadataType="Wsdl" ID="fef301cf-6b9f-4812-a826-f666176cb44d" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?wsdl" />
+    <MetadataFile FileName="EFMFirmService17.xsd" MetadataType="Schema" ID="86c57ef0-fbcd-4125-affe-59d0450fef4c" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd8" />
+    <MetadataFile FileName="EFMFirmService18.xsd" MetadataType="Schema" ID="23306d65-14bc-458d-b91f-32327927f949" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd34" />
+    <MetadataFile FileName="EFMFirmService19.xsd" MetadataType="Schema" ID="97c2b48a-2544-4824-a3ce-3df664324105" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd45" />
+    <MetadataFile FileName="EFMFirmService20.xsd" MetadataType="Schema" ID="89c2afe3-4f2a-4666-82e3-4cfd0510518c" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd51" />
+    <MetadataFile FileName="EFMFirmService21.xsd" MetadataType="Schema" ID="e4641e37-7836-4f57-b71d-003108047f8d" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd48" />
+    <MetadataFile FileName="EFMFirmService22.xsd" MetadataType="Schema" ID="f6dfc0c9-baac-4554-bddc-222e003f2159" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd10" />
+    <MetadataFile FileName="EFMFirmService23.xsd" MetadataType="Schema" ID="83dca3ca-c275-45e3-a7d8-906c2f82d739" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd32" />
+    <MetadataFile FileName="EFMFirmService24.xsd" MetadataType="Schema" ID="f9ec7fd0-017e-4543-b1ff-49ad30734678" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd15" />
+    <MetadataFile FileName="EFMFirmService25.xsd" MetadataType="Schema" ID="45363900-af55-4a6c-842f-335b2413697e" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd22" />
+    <MetadataFile FileName="EFMFirmService26.xsd" MetadataType="Schema" ID="aabe06c9-ab3b-47ef-a25e-9944e4a2be3c" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd52" />
+    <MetadataFile FileName="EFMFirmService27.xsd" MetadataType="Schema" ID="824ef8e6-a3eb-4811-b074-762bc514cde4" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd35" />
+    <MetadataFile FileName="EFMFirmService28.xsd" MetadataType="Schema" ID="d1be6498-8c06-446b-bb11-700caf3bc064" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd42" />
+    <MetadataFile FileName="EFMFirmService29.xsd" MetadataType="Schema" ID="74a228f9-6861-45b3-9a02-905c3739f9ec" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd9" />
+    <MetadataFile FileName="EFMFirmService30.xsd" MetadataType="Schema" ID="c3c73d36-e857-4ba5-9a64-a4462cf9b8c6" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd38" />
+    <MetadataFile FileName="EFMFirmService31.xsd" MetadataType="Schema" ID="4d446ad1-9fad-4fa2-8c97-80967217ef35" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd49" />
+    <MetadataFile FileName="EFMFirmService32.xsd" MetadataType="Schema" ID="fd8965bf-5f8a-421b-a902-07c6c1e29e11" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd28" />
+    <MetadataFile FileName="EFMFirmService.disco" MetadataType="Disco" ID="66cd96ff-94bf-4eb3-a9f2-e6fb1e091761" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?disco" />
+    <MetadataFile FileName="EFMFirmService33.xsd" MetadataType="Schema" ID="44442da5-58f9-4cec-8f35-9cdb29edfeb9" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd12" />
+    <MetadataFile FileName="EFMFirmService34.xsd" MetadataType="Schema" ID="f010f8f3-90ea-4056-9c56-d3821170f336" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd33" />
+    <MetadataFile FileName="EFMFirmService35.xsd" MetadataType="Schema" ID="7389cb3e-6b11-4c72-b4fb-984c9088b978" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd40" />
+    <MetadataFile FileName="EFMFirmService36.xsd" MetadataType="Schema" ID="d8c08592-06cc-49ee-acdd-54b7cb6f93e8" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd23" />
+    <MetadataFile FileName="EFMFirmService37.xsd" MetadataType="Schema" ID="3786ad21-0ff9-4fd0-ad0b-d2785c1dd4a2" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd53" />
+    <MetadataFile FileName="EFMFirmService38.xsd" MetadataType="Schema" ID="5e65aefd-2ae7-4366-be54-85628e12785b" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd19" />
+    <MetadataFile FileName="EFMFirmService39.xsd" MetadataType="Schema" ID="9e8fdecc-230c-4a65-bf06-3e11c14b293e" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd43" />
+    <MetadataFile FileName="EFMFirmService40.xsd" MetadataType="Schema" ID="739e5fff-6b8b-4665-8268-cfac31062353" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd39" />
+    <MetadataFile FileName="EFMFirmService41.xsd" MetadataType="Schema" ID="945059d8-ca4f-425f-a733-b3c1a12417b3" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd46" />
+    <MetadataFile FileName="EFMFirmService42.xsd" MetadataType="Schema" ID="75519106-d059-4567-8757-fa61502bc3cd" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd29" />
+    <MetadataFile FileName="EFMFirmService43.xsd" MetadataType="Schema" ID="0a945bd8-2c25-497a-a2d8-3d6cb4d3b658" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd4" />
+    <MetadataFile FileName="EFMFirmService44.xsd" MetadataType="Schema" ID="cb5b08bd-9484-4b6b-802a-915f0b742a9f" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd5" />
+    <MetadataFile FileName="EFMFirmService45.xsd" MetadataType="Schema" ID="ade9ec2d-c48f-4700-83a6-70537bf8a290" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd7" />
+    <MetadataFile FileName="EFMFirmService46.xsd" MetadataType="Schema" ID="7ac7938b-a1f9-4ad8-8e98-c233de727905" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd30" />
+    <MetadataFile FileName="EFMFirmService47.xsd" MetadataType="Schema" ID="984c38d6-75fc-4a9a-9f47-7b4e74f767b5" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd13" />
+    <MetadataFile FileName="EFMFirmService48.xsd" MetadataType="Schema" ID="72531001-35dc-4ee2-a3c2-03d7abfea742" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd20" />
+    <MetadataFile FileName="EFMFirmService49.xsd" MetadataType="Schema" ID="e8384aea-95bc-4746-91c9-59309c023967" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd50" />
+    <MetadataFile FileName="EFMFirmService50.xsd" MetadataType="Schema" ID="780fcf6b-9462-4e90-aa11-dfe347e2994a" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd6" />
+    <MetadataFile FileName="EFMFirmService51.xsd" MetadataType="Schema" ID="e989c91f-35d1-4518-a901-cd9fe0a64e93" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd16" />
+    <MetadataFile FileName="EFMFirmService52.xsd" MetadataType="Schema" ID="970b78fa-c90e-4be8-8535-1d704170ece6" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd27" />
+    <MetadataFile FileName="EFMFirmService53.xsd" MetadataType="Schema" ID="8701bdc8-c766-4ff9-9262-e371cbd7c514" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd36" />
+    <MetadataFile FileName="EFMFirmService54.xsd" MetadataType="Schema" ID="e632dcb7-f1da-4d46-acef-74311ba02d13" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd47" />
+    <MetadataFile FileName="EFMFirmService55.xsd" MetadataType="Schema" ID="69027da7-3bee-4e2c-ad4e-cf5f72869eef" SourceId="1" SourceUrl="https://efsp.efiletexas.gov/EFM/EFMFirmService.svc?xsd=xsd26" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
