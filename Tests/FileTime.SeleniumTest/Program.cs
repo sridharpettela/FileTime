@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FileTime.SeleniumTest.Web;
+using System;
+using System.Threading.Tasks;
 
 namespace FileTime.SeleniumTest
 {
@@ -6,7 +8,11 @@ namespace FileTime.SeleniumTest
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			SubmitFilingTest objSubmitFilingTest = new SubmitFilingTest();
+
+			Parallel.For(0, 20, t => objSubmitFilingTest.RunTest(t));
+			Console.WriteLine("Enter any Key....");
+			Console.ReadLine();
 		}
 	}
 }
