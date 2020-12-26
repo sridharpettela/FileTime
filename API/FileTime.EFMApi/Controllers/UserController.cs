@@ -11,6 +11,7 @@ using System.Web.Http;
 
 namespace FileTime.EFMApi.Controllers
 {
+    [Route("api/v1/user")]
     public class UserController : ApiController
     {
         private readonly IUserServiceWrapper _userServiceWrapper;
@@ -20,6 +21,17 @@ namespace FileTime.EFMApi.Controllers
             _userServiceWrapper.CheckArgumentIsNull(nameof(userServiceWrapper));
         }
 
+        [AllowAnonymous]
+        [HttpGet()]
+        [Route("test")]
+        public bool Test()
+        {
+            return true;
+        }
+
+        [AllowAnonymous]
+        [HttpPost()]
+        [Route("login")]
         public async Task<UserLoginResponseModel> Login(UserLoginRequestModel model)
         {
             return await _userServiceWrapper.LoginAsync(model);
