@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileTime.EFMApi.Models.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,5 +14,7 @@ namespace FileTime.EFMApi.Models.User
 		public string EmailAddress { get; set; }
 		public string EFMUserId { get; set; }
 		public string Password { get; set; }
+
+		public ErrorResponseListModel Errors { get; set; }
 	}
 }
