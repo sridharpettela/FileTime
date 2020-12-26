@@ -11,7 +11,7 @@ using System.Web.Http;
 
 namespace FileTime.EFMApi.Controllers
 {
-    [Route("api/v1/user")]
+    [RoutePrefix("api/v1/user")]
     public class UserController : ApiController
     {
         private readonly IUserServiceWrapper _userServiceWrapper;
