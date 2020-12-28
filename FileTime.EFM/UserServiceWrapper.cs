@@ -23,7 +23,7 @@ namespace FileTime.EFM
 
 		public async Task<FilerLogin> Login(FilerLogin request)
 		{
-			return await _apiClient.PostAsync<FilerLogin>("", request);
+			return await _apiClient.PostAsync<FilerLogin>(RequestUrl.login, request);
 		}
 	}
 }
