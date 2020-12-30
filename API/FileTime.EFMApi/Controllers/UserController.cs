@@ -24,9 +24,9 @@ namespace FileTime.EFMApi.Controllers
         [AllowAnonymous]
         [HttpGet()]
         [Route("test")]
-        public bool Test()
+        public async Task<UserLoginResponseModel> Test()
         {
-            return true;
+            return await _userServiceWrapper.LoginAsync(new UserLoginRequestModel() { UserName = "sirishapettela@gmail.com", Password = "Abcd1234" });
         }
 
         [AllowAnonymous]
