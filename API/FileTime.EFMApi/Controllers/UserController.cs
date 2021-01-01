@@ -1,6 +1,7 @@
 ﻿using FileTime.EFMApi.App_Start;
 using FileTime.EFMApi.Models.User;
 using FileTime.EFMApi.Wrappers.Interface;
+using Microsoft.Web.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,8 @@ using System.Web.Http;
 
 namespace FileTime.EFMApi.Controllers
 {
-    [RoutePrefix("api/v1/user")]
+    [ApiVersion("1.0")]
+    [RoutePrefix("api/user")]
     public class UserController : ApiController
     {
         private readonly IUserServiceWrapper _userServiceWrapper;
