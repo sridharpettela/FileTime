@@ -34,7 +34,7 @@ namespace FileTime.EFMApi
             config.Services.Replace(typeof(IExceptionLogger), new UnhandledExceptionLogger());
 
             //Registering RequestResponseHandler
-            config.MessageHandlers.Add(new RequestResponseHandler());
+            //config.MessageHandlers.Add(new RequestResponseHandler());
 
 
             //config.Routes.MapHttpRoute(
