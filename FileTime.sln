@@ -45,7 +45,9 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FileTime.Logging", "Databas
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7298E483-0D2B-4127-A4FE-58878ACDF979}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.Log", "Core\FileTime.Log\FileTime.Log.csproj", "{7C52726F-1893-4A08-BF12-C021FF353260}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.Log", "Core\FileTime.Log\FileTime.Log.csproj", "{7C52726F-1893-4A08-BF12-C021FF353260}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{5AC39248-E62F-41E3-A159-27E1C739373E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -144,35 +144,35 @@ namespace FileTime.EFMApi.EFMUserServices {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemoveUserRoleRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetPaymentAccountRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AddUserRoleRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateServiceContactRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetAttorneyRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemoveServiceContactRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreateServiceContactRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreateAttorneyRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ResetUserPasswordRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreatePaymentAccountRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreateServiceContactRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemoveUserRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RegistrationRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DetachServiceContactRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttachServiceContactRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateServiceContactRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemoveServiceContactRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemoveAttorneyRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateAttorneyRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetAttorneyRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreatePaymentAccountRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreateAttorneyRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemoveUserRoleRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetServiceContactRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemovePaymentAccountRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ResendActivationEmailRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DetachServiceContactRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RegistrationRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttachServiceContactRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateAttorneyRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemoveAttorneyRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetPaymentAccountRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AddUserRoleRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdatePaymentAccountRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ResendActivationEmailRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateFirmRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateNotificationPreferencesRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AuthenticateRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetUserRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ResetPasswordRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SelfResendActivationEmailRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateUserRequestType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ChangePasswordRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AuthenticateRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetPasswordQuestionRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ResetPasswordRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateUserRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateNotificationPreferencesRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ChangePasswordRequestType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SelfResendActivationEmailRequestType))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -283,28 +283,28 @@ namespace FileTime.EFMApi.EFMUserServices {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PaymentAccountListResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreateServiceContactResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateServiceContactResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UserListResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreatePaymentAccountResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetAttorneyResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdatePaymentAccountResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreatePaymentAccountResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttorneyListResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetPaymentAccountResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ServiceContactListResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetServiceContactResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreateServiceContactResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetFirmResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RegistrationResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PaymentAccountListResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(PaymentAccountTypeListResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreateAttorneyResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttorneyListResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetFirmResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetServiceContactResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetPaymentAccountResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RegistrationResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateAttorneyResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ServiceContactListResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NotificationPreferencesResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UserListResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetAttorneyResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetUserResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ResetPasswordResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ChangePasswordResponseType))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PasswordQuestionResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AuthenticateResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PasswordQuestionResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ResetPasswordResponseType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NotificationPreferencesResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateUserResponseType))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
@@ -342,14 +342,208 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:PaymentAccountListResponse")]
-    public partial class PaymentAccountListResponseType : BaseResponseType {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateServiceContactResponse")]
+    public partial class UpdateServiceContactResponseType : BaseResponseType {
         
-        private PaymentAccountType[] paymentAccountField;
+        private string serviceContactIDField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PaymentAccount", Order=0)]
-        public PaymentAccountType[] PaymentAccount {
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string ServiceContactID {
+            get {
+                return this.serviceContactIDField;
+            }
+            set {
+                this.serviceContactIDField = value;
+                this.RaisePropertyChanged("ServiceContactID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdatePaymentAccountResponse")]
+    public partial class UpdatePaymentAccountResponseType : BaseResponseType {
+        
+        private string paymentAccountIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string PaymentAccountID {
+            get {
+                return this.paymentAccountIDField;
+            }
+            set {
+                this.paymentAccountIDField = value;
+                this.RaisePropertyChanged("PaymentAccountID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreatePaymentAccountResponse")]
+    public partial class CreatePaymentAccountResponseType : BaseResponseType {
+        
+        private string paymentAccountIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string PaymentAccountID {
+            get {
+                return this.paymentAccountIDField;
+            }
+            set {
+                this.paymentAccountIDField = value;
+                this.RaisePropertyChanged("PaymentAccountID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:AttorneyListResponse")]
+    public partial class AttorneyListResponseType : BaseResponseType {
+        
+        private AttorneyType[] attorneyField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Attorney", Order=0)]
+        public AttorneyType[] Attorney {
+            get {
+                return this.attorneyField;
+            }
+            set {
+                this.attorneyField = value;
+                this.RaisePropertyChanged("Attorney");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
+    public partial class AttorneyType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string barNumberField;
+        
+        private string firstNameField;
+        
+        private string middleNameField;
+        
+        private string lastNameField;
+        
+        private string attorneyIDField;
+        
+        private string firmIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string BarNumber {
+            get {
+                return this.barNumberField;
+            }
+            set {
+                this.barNumberField = value;
+                this.RaisePropertyChanged("BarNumber");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public string FirstName {
+            get {
+                return this.firstNameField;
+            }
+            set {
+                this.firstNameField = value;
+                this.RaisePropertyChanged("FirstName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=2)]
+        public string MiddleName {
+            get {
+                return this.middleNameField;
+            }
+            set {
+                this.middleNameField = value;
+                this.RaisePropertyChanged("MiddleName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public string LastName {
+            get {
+                return this.lastNameField;
+            }
+            set {
+                this.lastNameField = value;
+                this.RaisePropertyChanged("LastName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string AttorneyID {
+            get {
+                return this.attorneyIDField;
+            }
+            set {
+                this.attorneyIDField = value;
+                this.RaisePropertyChanged("AttorneyID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string FirmID {
+            get {
+                return this.firmIDField;
+            }
+            set {
+                this.firmIDField = value;
+                this.RaisePropertyChanged("FirmID");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetPaymentAccountResponse")]
+    public partial class GetPaymentAccountResponseType : BaseResponseType {
+        
+        private PaymentAccountType paymentAccountField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
+        public PaymentAccountType PaymentAccount {
             get {
                 return this.paymentAccountField;
             }
@@ -579,6 +773,382 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:ServiceContactListResponse")]
+    public partial class ServiceContactListResponseType : BaseResponseType {
+        
+        private ServiceContactType[] serviceContactField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ServiceContact", Order=0)]
+        public ServiceContactType[] ServiceContact {
+            get {
+                return this.serviceContactField;
+            }
+            set {
+                this.serviceContactField = value;
+                this.RaisePropertyChanged("ServiceContact");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
+    public partial class ServiceContactType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string firstNameField;
+        
+        private string middleNameField;
+        
+        private string lastNameField;
+        
+        private string emailField;
+        
+        private string administrativeCopyField;
+        
+        private AddressType addressField;
+        
+        private string phoneNumberField;
+        
+        private System.Nullable<bool> isPublicField;
+        
+        private bool isPublicFieldSpecified;
+        
+        private System.Nullable<bool> isInFirmMasterListField;
+        
+        private bool isInFirmMasterListFieldSpecified;
+        
+        private string serviceContactIDField;
+        
+        private string firmIDField;
+        
+        private string firmNameField;
+        
+        private string addByFirmNameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string FirstName {
+            get {
+                return this.firstNameField;
+            }
+            set {
+                this.firstNameField = value;
+                this.RaisePropertyChanged("FirstName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=1)]
+        public string MiddleName {
+            get {
+                return this.middleNameField;
+            }
+            set {
+                this.middleNameField = value;
+                this.RaisePropertyChanged("MiddleName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public string LastName {
+            get {
+                return this.lastNameField;
+            }
+            set {
+                this.lastNameField = value;
+                this.RaisePropertyChanged("LastName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+                this.RaisePropertyChanged("Email");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public string AdministrativeCopy {
+            get {
+                return this.administrativeCopyField;
+            }
+            set {
+                this.administrativeCopyField = value;
+                this.RaisePropertyChanged("AdministrativeCopy");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        public AddressType Address {
+            get {
+                return this.addressField;
+            }
+            set {
+                this.addressField = value;
+                this.RaisePropertyChanged("Address");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        public string PhoneNumber {
+            get {
+                return this.phoneNumberField;
+            }
+            set {
+                this.phoneNumberField = value;
+                this.RaisePropertyChanged("PhoneNumber");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=7)]
+        public System.Nullable<bool> IsPublic {
+            get {
+                return this.isPublicField;
+            }
+            set {
+                this.isPublicField = value;
+                this.RaisePropertyChanged("IsPublic");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IsPublicSpecified {
+            get {
+                return this.isPublicFieldSpecified;
+            }
+            set {
+                this.isPublicFieldSpecified = value;
+                this.RaisePropertyChanged("IsPublicSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=8)]
+        public System.Nullable<bool> IsInFirmMasterList {
+            get {
+                return this.isInFirmMasterListField;
+            }
+            set {
+                this.isInFirmMasterListField = value;
+                this.RaisePropertyChanged("IsInFirmMasterList");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IsInFirmMasterListSpecified {
+            get {
+                return this.isInFirmMasterListFieldSpecified;
+            }
+            set {
+                this.isInFirmMasterListFieldSpecified = value;
+                this.RaisePropertyChanged("IsInFirmMasterListSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ServiceContactID {
+            get {
+                return this.serviceContactIDField;
+            }
+            set {
+                this.serviceContactIDField = value;
+                this.RaisePropertyChanged("ServiceContactID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string FirmID {
+            get {
+                return this.firmIDField;
+            }
+            set {
+                this.firmIDField = value;
+                this.RaisePropertyChanged("FirmID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string FirmName {
+            get {
+                return this.firmNameField;
+            }
+            set {
+                this.firmNameField = value;
+                this.RaisePropertyChanged("FirmName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string AddByFirmName {
+            get {
+                return this.addByFirmNameField;
+            }
+            set {
+                this.addByFirmNameField = value;
+                this.RaisePropertyChanged("AddByFirmName");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
+    public partial class AddressType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string addressLine1Field;
+        
+        private string addressLine2Field;
+        
+        private string cityField;
+        
+        private string stateField;
+        
+        private string zipCodeField;
+        
+        private string countryField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=0)]
+        public string AddressLine1 {
+            get {
+                return this.addressLine1Field;
+            }
+            set {
+                this.addressLine1Field = value;
+                this.RaisePropertyChanged("AddressLine1");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=1)]
+        public string AddressLine2 {
+            get {
+                return this.addressLine2Field;
+            }
+            set {
+                this.addressLine2Field = value;
+                this.RaisePropertyChanged("AddressLine2");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=2)]
+        public string City {
+            get {
+                return this.cityField;
+            }
+            set {
+                this.cityField = value;
+                this.RaisePropertyChanged("City");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=3)]
+        public string State {
+            get {
+                return this.stateField;
+            }
+            set {
+                this.stateField = value;
+                this.RaisePropertyChanged("State");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=4)]
+        public string ZipCode {
+            get {
+                return this.zipCodeField;
+            }
+            set {
+                this.zipCodeField = value;
+                this.RaisePropertyChanged("ZipCode");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=5)]
+        public string Country {
+            get {
+                return this.countryField;
+            }
+            set {
+                this.countryField = value;
+                this.RaisePropertyChanged("Country");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetServiceContactResponse")]
+    public partial class GetServiceContactResponseType : BaseResponseType {
+        
+        private ServiceContactType serviceContactField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
+        public ServiceContactType ServiceContact {
+            get {
+                return this.serviceContactField;
+            }
+            set {
+                this.serviceContactField = value;
+                this.RaisePropertyChanged("ServiceContact");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreateServiceContactResponse")]
     public partial class CreateServiceContactResponseType : BaseResponseType {
         
@@ -602,20 +1172,279 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateServiceContactResponse")]
-    public partial class UpdateServiceContactResponseType : BaseResponseType {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetFirmResponse")]
+    public partial class GetFirmResponseType : BaseResponseType {
         
-        private string serviceContactIDField;
+        private FirmType firmField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string ServiceContactID {
+        public FirmType Firm {
             get {
-                return this.serviceContactIDField;
+                return this.firmField;
             }
             set {
-                this.serviceContactIDField = value;
-                this.RaisePropertyChanged("ServiceContactID");
+                this.firmField = value;
+                this.RaisePropertyChanged("Firm");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
+    public partial class FirmType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string firmNameField;
+        
+        private AddressType addressField;
+        
+        private string phoneNumberField;
+        
+        private string firmIDField;
+        
+        private bool isIndividualField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string FirmName {
+            get {
+                return this.firmNameField;
+            }
+            set {
+                this.firmNameField = value;
+                this.RaisePropertyChanged("FirmName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=1)]
+        public AddressType Address {
+            get {
+                return this.addressField;
+            }
+            set {
+                this.addressField = value;
+                this.RaisePropertyChanged("Address");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=2)]
+        public string PhoneNumber {
+            get {
+                return this.phoneNumberField;
+            }
+            set {
+                this.phoneNumberField = value;
+                this.RaisePropertyChanged("PhoneNumber");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string FirmID {
+            get {
+                return this.firmIDField;
+            }
+            set {
+                this.firmIDField = value;
+                this.RaisePropertyChanged("FirmID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public bool IsIndividual {
+            get {
+                return this.isIndividualField;
+            }
+            set {
+                this.isIndividualField = value;
+                this.RaisePropertyChanged("IsIndividual");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:RegistrationResponse")]
+    public partial class RegistrationResponseType : BaseResponseType {
+        
+        private string userIDField;
+        
+        private string firmIDField;
+        
+        private string passwordHashField;
+        
+        private bool activationRequiredField;
+        
+        private System.DateTime expirationDateTimeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string UserID {
+            get {
+                return this.userIDField;
+            }
+            set {
+                this.userIDField = value;
+                this.RaisePropertyChanged("UserID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public string FirmID {
+            get {
+                return this.firmIDField;
+            }
+            set {
+                this.firmIDField = value;
+                this.RaisePropertyChanged("FirmID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public string PasswordHash {
+            get {
+                return this.passwordHashField;
+            }
+            set {
+                this.passwordHashField = value;
+                this.RaisePropertyChanged("PasswordHash");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public bool ActivationRequired {
+            get {
+                return this.activationRequiredField;
+            }
+            set {
+                this.activationRequiredField = value;
+                this.RaisePropertyChanged("ActivationRequired");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public System.DateTime ExpirationDateTime {
+            get {
+                return this.expirationDateTimeField;
+            }
+            set {
+                this.expirationDateTimeField = value;
+                this.RaisePropertyChanged("ExpirationDateTime");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:PaymentAccountListResponse")]
+    public partial class PaymentAccountListResponseType : BaseResponseType {
+        
+        private PaymentAccountType[] paymentAccountField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("PaymentAccount", Order=0)]
+        public PaymentAccountType[] PaymentAccount {
+            get {
+                return this.paymentAccountField;
+            }
+            set {
+                this.paymentAccountField = value;
+                this.RaisePropertyChanged("PaymentAccount");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:PaymentAccountTypeListResponse")]
+    public partial class PaymentAccountTypeListResponseType : BaseResponseType {
+        
+        private PaymentAccountTypeType[] paymentAccountTypeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("PaymentAccountType", Order=0)]
+        public PaymentAccountTypeType[] PaymentAccountType {
+            get {
+                return this.paymentAccountTypeField;
+            }
+            set {
+                this.paymentAccountTypeField = value;
+                this.RaisePropertyChanged("PaymentAccountType");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreateAttorneyResponse")]
+    public partial class CreateAttorneyResponseType : BaseResponseType {
+        
+        private string attorneyIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string AttorneyID {
+            get {
+                return this.attorneyIDField;
+            }
+            set {
+                this.attorneyIDField = value;
+                this.RaisePropertyChanged("AttorneyID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateAttorneyResponse")]
+    public partial class UpdateAttorneyResponseType : BaseResponseType {
+        
+        private string attorneyIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string AttorneyID {
+            get {
+                return this.attorneyIDField;
+            }
+            set {
+                this.attorneyIDField = value;
+                this.RaisePropertyChanged("AttorneyID");
             }
         }
     }
@@ -930,29 +1759,6 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreatePaymentAccountResponse")]
-    public partial class CreatePaymentAccountResponseType : BaseResponseType {
-        
-        private string paymentAccountIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string PaymentAccountID {
-            get {
-                return this.paymentAccountIDField;
-            }
-            set {
-                this.paymentAccountIDField = value;
-                this.RaisePropertyChanged("PaymentAccountID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetAttorneyResponse")]
     public partial class GetAttorneyResponseType : BaseResponseType {
         
@@ -976,895 +1782,6 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
-    public partial class AttorneyType : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string barNumberField;
-        
-        private string firstNameField;
-        
-        private string middleNameField;
-        
-        private string lastNameField;
-        
-        private string attorneyIDField;
-        
-        private string firmIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string BarNumber {
-            get {
-                return this.barNumberField;
-            }
-            set {
-                this.barNumberField = value;
-                this.RaisePropertyChanged("BarNumber");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string FirstName {
-            get {
-                return this.firstNameField;
-            }
-            set {
-                this.firstNameField = value;
-                this.RaisePropertyChanged("FirstName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=2)]
-        public string MiddleName {
-            get {
-                return this.middleNameField;
-            }
-            set {
-                this.middleNameField = value;
-                this.RaisePropertyChanged("MiddleName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string LastName {
-            get {
-                return this.lastNameField;
-            }
-            set {
-                this.lastNameField = value;
-                this.RaisePropertyChanged("LastName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string AttorneyID {
-            get {
-                return this.attorneyIDField;
-            }
-            set {
-                this.attorneyIDField = value;
-                this.RaisePropertyChanged("AttorneyID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string FirmID {
-            get {
-                return this.firmIDField;
-            }
-            set {
-                this.firmIDField = value;
-                this.RaisePropertyChanged("FirmID");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdatePaymentAccountResponse")]
-    public partial class UpdatePaymentAccountResponseType : BaseResponseType {
-        
-        private string paymentAccountIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string PaymentAccountID {
-            get {
-                return this.paymentAccountIDField;
-            }
-            set {
-                this.paymentAccountIDField = value;
-                this.RaisePropertyChanged("PaymentAccountID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:PaymentAccountTypeListResponse")]
-    public partial class PaymentAccountTypeListResponseType : BaseResponseType {
-        
-        private PaymentAccountTypeType[] paymentAccountTypeField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PaymentAccountType", Order=0)]
-        public PaymentAccountTypeType[] PaymentAccountType {
-            get {
-                return this.paymentAccountTypeField;
-            }
-            set {
-                this.paymentAccountTypeField = value;
-                this.RaisePropertyChanged("PaymentAccountType");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreateAttorneyResponse")]
-    public partial class CreateAttorneyResponseType : BaseResponseType {
-        
-        private string attorneyIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string AttorneyID {
-            get {
-                return this.attorneyIDField;
-            }
-            set {
-                this.attorneyIDField = value;
-                this.RaisePropertyChanged("AttorneyID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:AttorneyListResponse")]
-    public partial class AttorneyListResponseType : BaseResponseType {
-        
-        private AttorneyType[] attorneyField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Attorney", Order=0)]
-        public AttorneyType[] Attorney {
-            get {
-                return this.attorneyField;
-            }
-            set {
-                this.attorneyField = value;
-                this.RaisePropertyChanged("Attorney");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetFirmResponse")]
-    public partial class GetFirmResponseType : BaseResponseType {
-        
-        private FirmType firmField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public FirmType Firm {
-            get {
-                return this.firmField;
-            }
-            set {
-                this.firmField = value;
-                this.RaisePropertyChanged("Firm");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
-    public partial class FirmType : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string firmNameField;
-        
-        private AddressType addressField;
-        
-        private string phoneNumberField;
-        
-        private string firmIDField;
-        
-        private bool isIndividualField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string FirmName {
-            get {
-                return this.firmNameField;
-            }
-            set {
-                this.firmNameField = value;
-                this.RaisePropertyChanged("FirmName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=1)]
-        public AddressType Address {
-            get {
-                return this.addressField;
-            }
-            set {
-                this.addressField = value;
-                this.RaisePropertyChanged("Address");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=2)]
-        public string PhoneNumber {
-            get {
-                return this.phoneNumberField;
-            }
-            set {
-                this.phoneNumberField = value;
-                this.RaisePropertyChanged("PhoneNumber");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string FirmID {
-            get {
-                return this.firmIDField;
-            }
-            set {
-                this.firmIDField = value;
-                this.RaisePropertyChanged("FirmID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool IsIndividual {
-            get {
-                return this.isIndividualField;
-            }
-            set {
-                this.isIndividualField = value;
-                this.RaisePropertyChanged("IsIndividual");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
-    public partial class AddressType : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string addressLine1Field;
-        
-        private string addressLine2Field;
-        
-        private string cityField;
-        
-        private string stateField;
-        
-        private string zipCodeField;
-        
-        private string countryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=0)]
-        public string AddressLine1 {
-            get {
-                return this.addressLine1Field;
-            }
-            set {
-                this.addressLine1Field = value;
-                this.RaisePropertyChanged("AddressLine1");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=1)]
-        public string AddressLine2 {
-            get {
-                return this.addressLine2Field;
-            }
-            set {
-                this.addressLine2Field = value;
-                this.RaisePropertyChanged("AddressLine2");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=2)]
-        public string City {
-            get {
-                return this.cityField;
-            }
-            set {
-                this.cityField = value;
-                this.RaisePropertyChanged("City");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=3)]
-        public string State {
-            get {
-                return this.stateField;
-            }
-            set {
-                this.stateField = value;
-                this.RaisePropertyChanged("State");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=4)]
-        public string ZipCode {
-            get {
-                return this.zipCodeField;
-            }
-            set {
-                this.zipCodeField = value;
-                this.RaisePropertyChanged("ZipCode");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=5)]
-        public string Country {
-            get {
-                return this.countryField;
-            }
-            set {
-                this.countryField = value;
-                this.RaisePropertyChanged("Country");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetServiceContactResponse")]
-    public partial class GetServiceContactResponseType : BaseResponseType {
-        
-        private ServiceContactType serviceContactField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
-        public ServiceContactType ServiceContact {
-            get {
-                return this.serviceContactField;
-            }
-            set {
-                this.serviceContactField = value;
-                this.RaisePropertyChanged("ServiceContact");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
-    public partial class ServiceContactType : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string firstNameField;
-        
-        private string middleNameField;
-        
-        private string lastNameField;
-        
-        private string emailField;
-        
-        private string administrativeCopyField;
-        
-        private AddressType addressField;
-        
-        private string phoneNumberField;
-        
-        private System.Nullable<bool> isPublicField;
-        
-        private bool isPublicFieldSpecified;
-        
-        private System.Nullable<bool> isInFirmMasterListField;
-        
-        private bool isInFirmMasterListFieldSpecified;
-        
-        private string serviceContactIDField;
-        
-        private string firmIDField;
-        
-        private string firmNameField;
-        
-        private string addByFirmNameField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string FirstName {
-            get {
-                return this.firstNameField;
-            }
-            set {
-                this.firstNameField = value;
-                this.RaisePropertyChanged("FirstName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=1)]
-        public string MiddleName {
-            get {
-                return this.middleNameField;
-            }
-            set {
-                this.middleNameField = value;
-                this.RaisePropertyChanged("MiddleName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string LastName {
-            get {
-                return this.lastNameField;
-            }
-            set {
-                this.lastNameField = value;
-                this.RaisePropertyChanged("LastName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string Email {
-            get {
-                return this.emailField;
-            }
-            set {
-                this.emailField = value;
-                this.RaisePropertyChanged("Email");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string AdministrativeCopy {
-            get {
-                return this.administrativeCopyField;
-            }
-            set {
-                this.administrativeCopyField = value;
-                this.RaisePropertyChanged("AdministrativeCopy");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public AddressType Address {
-            get {
-                return this.addressField;
-            }
-            set {
-                this.addressField = value;
-                this.RaisePropertyChanged("Address");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public string PhoneNumber {
-            get {
-                return this.phoneNumberField;
-            }
-            set {
-                this.phoneNumberField = value;
-                this.RaisePropertyChanged("PhoneNumber");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=7)]
-        public System.Nullable<bool> IsPublic {
-            get {
-                return this.isPublicField;
-            }
-            set {
-                this.isPublicField = value;
-                this.RaisePropertyChanged("IsPublic");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool IsPublicSpecified {
-            get {
-                return this.isPublicFieldSpecified;
-            }
-            set {
-                this.isPublicFieldSpecified = value;
-                this.RaisePropertyChanged("IsPublicSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=8)]
-        public System.Nullable<bool> IsInFirmMasterList {
-            get {
-                return this.isInFirmMasterListField;
-            }
-            set {
-                this.isInFirmMasterListField = value;
-                this.RaisePropertyChanged("IsInFirmMasterList");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool IsInFirmMasterListSpecified {
-            get {
-                return this.isInFirmMasterListFieldSpecified;
-            }
-            set {
-                this.isInFirmMasterListFieldSpecified = value;
-                this.RaisePropertyChanged("IsInFirmMasterListSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string ServiceContactID {
-            get {
-                return this.serviceContactIDField;
-            }
-            set {
-                this.serviceContactIDField = value;
-                this.RaisePropertyChanged("ServiceContactID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string FirmID {
-            get {
-                return this.firmIDField;
-            }
-            set {
-                this.firmIDField = value;
-                this.RaisePropertyChanged("FirmID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string FirmName {
-            get {
-                return this.firmNameField;
-            }
-            set {
-                this.firmNameField = value;
-                this.RaisePropertyChanged("FirmName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string AddByFirmName {
-            get {
-                return this.addByFirmNameField;
-            }
-            set {
-                this.addByFirmNameField = value;
-                this.RaisePropertyChanged("AddByFirmName");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetPaymentAccountResponse")]
-    public partial class GetPaymentAccountResponseType : BaseResponseType {
-        
-        private PaymentAccountType paymentAccountField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
-        public PaymentAccountType PaymentAccount {
-            get {
-                return this.paymentAccountField;
-            }
-            set {
-                this.paymentAccountField = value;
-                this.RaisePropertyChanged("PaymentAccount");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:RegistrationResponse")]
-    public partial class RegistrationResponseType : BaseResponseType {
-        
-        private string userIDField;
-        
-        private string firmIDField;
-        
-        private string passwordHashField;
-        
-        private bool activationRequiredField;
-        
-        private System.DateTime expirationDateTimeField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string UserID {
-            get {
-                return this.userIDField;
-            }
-            set {
-                this.userIDField = value;
-                this.RaisePropertyChanged("UserID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string FirmID {
-            get {
-                return this.firmIDField;
-            }
-            set {
-                this.firmIDField = value;
-                this.RaisePropertyChanged("FirmID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string PasswordHash {
-            get {
-                return this.passwordHashField;
-            }
-            set {
-                this.passwordHashField = value;
-                this.RaisePropertyChanged("PasswordHash");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public bool ActivationRequired {
-            get {
-                return this.activationRequiredField;
-            }
-            set {
-                this.activationRequiredField = value;
-                this.RaisePropertyChanged("ActivationRequired");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public System.DateTime ExpirationDateTime {
-            get {
-                return this.expirationDateTimeField;
-            }
-            set {
-                this.expirationDateTimeField = value;
-                this.RaisePropertyChanged("ExpirationDateTime");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateAttorneyResponse")]
-    public partial class UpdateAttorneyResponseType : BaseResponseType {
-        
-        private string attorneyIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string AttorneyID {
-            get {
-                return this.attorneyIDField;
-            }
-            set {
-                this.attorneyIDField = value;
-                this.RaisePropertyChanged("AttorneyID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:ServiceContactListResponse")]
-    public partial class ServiceContactListResponseType : BaseResponseType {
-        
-        private ServiceContactType[] serviceContactField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ServiceContact", Order=0)]
-        public ServiceContactType[] ServiceContact {
-            get {
-                return this.serviceContactField;
-            }
-            set {
-                this.serviceContactField = value;
-                this.RaisePropertyChanged("ServiceContact");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:NotificationPreferencesResponse")]
-    public partial class NotificationPreferencesResponseType : BaseResponseType {
-        
-        private NotificationType[] notificationField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Notification", Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
-        public NotificationType[] Notification {
-            get {
-                return this.notificationField;
-            }
-            set {
-                this.notificationField = value;
-                this.RaisePropertyChanged("Notification");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
-    public partial class NotificationType : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string codeField;
-        
-        private string descriptionField;
-        
-        private bool isActiveField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string Code {
-            get {
-                return this.codeField;
-            }
-            set {
-                this.codeField = value;
-                this.RaisePropertyChanged("Code");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-                this.RaisePropertyChanged("Description");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public bool IsActive {
-            get {
-                return this.isActiveField;
-            }
-            set {
-                this.isActiveField = value;
-                this.RaisePropertyChanged("IsActive");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetUserResponse")]
     public partial class GetUserResponseType : BaseResponseType {
         
@@ -1879,29 +1796,6 @@ namespace FileTime.EFMApi.EFMUserServices {
             set {
                 this.userField = value;
                 this.RaisePropertyChanged("User");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:ResetPasswordResponse")]
-    public partial class ResetPasswordResponseType : BaseResponseType {
-        
-        private string passwordHashField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string PasswordHash {
-            get {
-                return this.passwordHashField;
-            }
-            set {
-                this.passwordHashField = value;
-                this.RaisePropertyChanged("PasswordHash");
             }
         }
     }
@@ -1939,29 +1833,6 @@ namespace FileTime.EFMApi.EFMUserServices {
             set {
                 this.expirationDateTimeField = value;
                 this.RaisePropertyChanged("ExpirationDateTime");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:PasswordQuestionResponse")]
-    public partial class PasswordQuestionResponseType : BaseResponseType {
-        
-        private string passwordQuestionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string PasswordQuestion {
-            get {
-                return this.passwordQuestionField;
-            }
-            set {
-                this.passwordQuestionField = value;
-                this.RaisePropertyChanged("PasswordQuestion");
             }
         }
     }
@@ -2064,6 +1935,135 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:PasswordQuestionResponse")]
+    public partial class PasswordQuestionResponseType : BaseResponseType {
+        
+        private string passwordQuestionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string PasswordQuestion {
+            get {
+                return this.passwordQuestionField;
+            }
+            set {
+                this.passwordQuestionField = value;
+                this.RaisePropertyChanged("PasswordQuestion");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:ResetPasswordResponse")]
+    public partial class ResetPasswordResponseType : BaseResponseType {
+        
+        private string passwordHashField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string PasswordHash {
+            get {
+                return this.passwordHashField;
+            }
+            set {
+                this.passwordHashField = value;
+                this.RaisePropertyChanged("PasswordHash");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:NotificationPreferencesResponse")]
+    public partial class NotificationPreferencesResponseType : BaseResponseType {
+        
+        private NotificationType[] notificationField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Notification", Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
+        public NotificationType[] Notification {
+            get {
+                return this.notificationField;
+            }
+            set {
+                this.notificationField = value;
+                this.RaisePropertyChanged("Notification");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:Common")]
+    public partial class NotificationType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codeField;
+        
+        private string descriptionField;
+        
+        private bool isActiveField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string Code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+                this.RaisePropertyChanged("Code");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+                this.RaisePropertyChanged("Description");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public bool IsActive {
+            get {
+                return this.isActiveField;
+            }
+            set {
+                this.isActiveField = value;
+                this.RaisePropertyChanged("IsActive");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateUserResponse")]
     public partial class UpdateUserResponseType : BaseResponseType {
         
@@ -2078,246 +2078,6 @@ namespace FileTime.EFMApi.EFMUserServices {
             set {
                 this.userIDField = value;
                 this.RaisePropertyChanged("UserID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:RemoveUserRoleRequest")]
-    public partial class RemoveUserRoleRequestType : BaseRequestType {
-        
-        private string userIDField;
-        
-        private RoleType roleField;
-        
-        private string locationField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string UserID {
-            get {
-                return this.userIDField;
-            }
-            set {
-                this.userIDField = value;
-                this.RaisePropertyChanged("UserID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=1)]
-        public RoleType Role {
-            get {
-                return this.roleField;
-            }
-            set {
-                this.roleField = value;
-                this.RaisePropertyChanged("Role");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string Location {
-            get {
-                return this.locationField;
-            }
-            set {
-                this.locationField = value;
-                this.RaisePropertyChanged("Location");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetPaymentAccountRequest")]
-    public partial class GetPaymentAccountRequestType : BaseRequestType {
-        
-        private string paymentAccountIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string PaymentAccountID {
-            get {
-                return this.paymentAccountIDField;
-            }
-            set {
-                this.paymentAccountIDField = value;
-                this.RaisePropertyChanged("PaymentAccountID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:AddUserRoleRequest")]
-    public partial class AddUserRoleRequestType : BaseRequestType {
-        
-        private string userIDField;
-        
-        private RoleType roleField;
-        
-        private string locationField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string UserID {
-            get {
-                return this.userIDField;
-            }
-            set {
-                this.userIDField = value;
-                this.RaisePropertyChanged("UserID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=1)]
-        public RoleType Role {
-            get {
-                return this.roleField;
-            }
-            set {
-                this.roleField = value;
-                this.RaisePropertyChanged("Role");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string Location {
-            get {
-                return this.locationField;
-            }
-            set {
-                this.locationField = value;
-                this.RaisePropertyChanged("Location");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateServiceContactRequest")]
-    public partial class UpdateServiceContactRequestType : BaseRequestType {
-        
-        private ServiceContactType serviceContactField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
-        public ServiceContactType ServiceContact {
-            get {
-                return this.serviceContactField;
-            }
-            set {
-                this.serviceContactField = value;
-                this.RaisePropertyChanged("ServiceContact");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetAttorneyRequest")]
-    public partial class GetAttorneyRequestType : BaseRequestType {
-        
-        private string attorneyIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string AttorneyID {
-            get {
-                return this.attorneyIDField;
-            }
-            set {
-                this.attorneyIDField = value;
-                this.RaisePropertyChanged("AttorneyID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:RemoveServiceContactRequest")]
-    public partial class RemoveServiceContactRequestType : BaseRequestType {
-        
-        private string serviceContactIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string ServiceContactID {
-            get {
-                return this.serviceContactIDField;
-            }
-            set {
-                this.serviceContactIDField = value;
-                this.RaisePropertyChanged("ServiceContactID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreateServiceContactRequest")]
-    public partial class CreateServiceContactRequestType : BaseRequestType {
-        
-        private ServiceContactType serviceContactField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
-        public ServiceContactType ServiceContact {
-            get {
-                return this.serviceContactField;
-            }
-            set {
-                this.serviceContactField = value;
-                this.RaisePropertyChanged("ServiceContact");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreateAttorneyRequest")]
-    public partial class CreateAttorneyRequestType : BaseRequestType {
-        
-        private AttorneyType attorneyField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
-        public AttorneyType Attorney {
-            get {
-                return this.attorneyField;
-            }
-            set {
-                this.attorneyField = value;
-                this.RaisePropertyChanged("Attorney");
             }
         }
     }
@@ -2378,20 +2138,20 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreatePaymentAccountRequest")]
-    public partial class CreatePaymentAccountRequestType : BaseRequestType {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreateServiceContactRequest")]
+    public partial class CreateServiceContactRequestType : BaseRequestType {
         
-        private PaymentAccountType paymentAccountField;
+        private ServiceContactType serviceContactField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
-        public PaymentAccountType PaymentAccount {
+        public ServiceContactType ServiceContact {
             get {
-                return this.paymentAccountField;
+                return this.serviceContactField;
             }
             set {
-                this.paymentAccountField = value;
-                this.RaisePropertyChanged("PaymentAccount");
+                this.serviceContactField = value;
+                this.RaisePropertyChanged("ServiceContact");
             }
         }
     }
@@ -2415,126 +2175,6 @@ namespace FileTime.EFMApi.EFMUserServices {
             set {
                 this.userIDField = value;
                 this.RaisePropertyChanged("UserID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetServiceContactRequest")]
-    public partial class GetServiceContactRequestType : BaseRequestType {
-        
-        private string serviceContactIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string ServiceContactID {
-            get {
-                return this.serviceContactIDField;
-            }
-            set {
-                this.serviceContactIDField = value;
-                this.RaisePropertyChanged("ServiceContactID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:RemovePaymentAccountRequest")]
-    public partial class RemovePaymentAccountRequestType : BaseRequestType {
-        
-        private string paymentAccountIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string PaymentAccountID {
-            get {
-                return this.paymentAccountIDField;
-            }
-            set {
-                this.paymentAccountIDField = value;
-                this.RaisePropertyChanged("PaymentAccountID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:ResendActivationEmailRequest")]
-    public partial class ResendActivationEmailRequestType : BaseRequestType {
-        
-        private string userIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string UserID {
-            get {
-                return this.userIDField;
-            }
-            set {
-                this.userIDField = value;
-                this.RaisePropertyChanged("UserID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:DetachServiceContactRequest")]
-    public partial class DetachServiceContactRequestType : BaseRequestType {
-        
-        private string serviceContactIDField;
-        
-        private string caseIDField;
-        
-        private string casePartyIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string ServiceContactID {
-            get {
-                return this.serviceContactIDField;
-            }
-            set {
-                this.serviceContactIDField = value;
-                this.RaisePropertyChanged("ServiceContactID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string CaseID {
-            get {
-                return this.caseIDField;
-            }
-            set {
-                this.caseIDField = value;
-                this.RaisePropertyChanged("CaseID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string CasePartyID {
-            get {
-                return this.casePartyIDField;
-            }
-            set {
-                this.casePartyIDField = value;
-                this.RaisePropertyChanged("CasePartyID");
             }
         }
     }
@@ -2793,6 +2433,57 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:DetachServiceContactRequest")]
+    public partial class DetachServiceContactRequestType : BaseRequestType {
+        
+        private string serviceContactIDField;
+        
+        private string caseIDField;
+        
+        private string casePartyIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string ServiceContactID {
+            get {
+                return this.serviceContactIDField;
+            }
+            set {
+                this.serviceContactIDField = value;
+                this.RaisePropertyChanged("ServiceContactID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public string CaseID {
+            get {
+                return this.caseIDField;
+            }
+            set {
+                this.caseIDField = value;
+                this.RaisePropertyChanged("CaseID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public string CasePartyID {
+            get {
+                return this.casePartyIDField;
+            }
+            set {
+                this.casePartyIDField = value;
+                this.RaisePropertyChanged("CasePartyID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:AttachServiceContactRequest")]
     public partial class AttachServiceContactRequestType : BaseRequestType {
         
@@ -2844,20 +2535,43 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateAttorneyRequest")]
-    public partial class UpdateAttorneyRequestType : BaseRequestType {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateServiceContactRequest")]
+    public partial class UpdateServiceContactRequestType : BaseRequestType {
         
-        private AttorneyType attorneyField;
+        private ServiceContactType serviceContactField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
-        public AttorneyType Attorney {
+        public ServiceContactType ServiceContact {
             get {
-                return this.attorneyField;
+                return this.serviceContactField;
             }
             set {
-                this.attorneyField = value;
-                this.RaisePropertyChanged("Attorney");
+                this.serviceContactField = value;
+                this.RaisePropertyChanged("ServiceContact");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:RemoveServiceContactRequest")]
+    public partial class RemoveServiceContactRequestType : BaseRequestType {
+        
+        private string serviceContactIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string ServiceContactID {
+            get {
+                return this.serviceContactIDField;
+            }
+            set {
+                this.serviceContactIDField = value;
+                this.RaisePropertyChanged("ServiceContactID");
             }
         }
     }
@@ -2890,6 +2604,269 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateAttorneyRequest")]
+    public partial class UpdateAttorneyRequestType : BaseRequestType {
+        
+        private AttorneyType attorneyField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
+        public AttorneyType Attorney {
+            get {
+                return this.attorneyField;
+            }
+            set {
+                this.attorneyField = value;
+                this.RaisePropertyChanged("Attorney");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetAttorneyRequest")]
+    public partial class GetAttorneyRequestType : BaseRequestType {
+        
+        private string attorneyIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string AttorneyID {
+            get {
+                return this.attorneyIDField;
+            }
+            set {
+                this.attorneyIDField = value;
+                this.RaisePropertyChanged("AttorneyID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreatePaymentAccountRequest")]
+    public partial class CreatePaymentAccountRequestType : BaseRequestType {
+        
+        private PaymentAccountType paymentAccountField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
+        public PaymentAccountType PaymentAccount {
+            get {
+                return this.paymentAccountField;
+            }
+            set {
+                this.paymentAccountField = value;
+                this.RaisePropertyChanged("PaymentAccount");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:CreateAttorneyRequest")]
+    public partial class CreateAttorneyRequestType : BaseRequestType {
+        
+        private AttorneyType attorneyField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
+        public AttorneyType Attorney {
+            get {
+                return this.attorneyField;
+            }
+            set {
+                this.attorneyField = value;
+                this.RaisePropertyChanged("Attorney");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:RemoveUserRoleRequest")]
+    public partial class RemoveUserRoleRequestType : BaseRequestType {
+        
+        private string userIDField;
+        
+        private RoleType roleField;
+        
+        private string locationField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string UserID {
+            get {
+                return this.userIDField;
+            }
+            set {
+                this.userIDField = value;
+                this.RaisePropertyChanged("UserID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=1)]
+        public RoleType Role {
+            get {
+                return this.roleField;
+            }
+            set {
+                this.roleField = value;
+                this.RaisePropertyChanged("Role");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public string Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+                this.RaisePropertyChanged("Location");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetServiceContactRequest")]
+    public partial class GetServiceContactRequestType : BaseRequestType {
+        
+        private string serviceContactIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string ServiceContactID {
+            get {
+                return this.serviceContactIDField;
+            }
+            set {
+                this.serviceContactIDField = value;
+                this.RaisePropertyChanged("ServiceContactID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:RemovePaymentAccountRequest")]
+    public partial class RemovePaymentAccountRequestType : BaseRequestType {
+        
+        private string paymentAccountIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string PaymentAccountID {
+            get {
+                return this.paymentAccountIDField;
+            }
+            set {
+                this.paymentAccountIDField = value;
+                this.RaisePropertyChanged("PaymentAccountID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetPaymentAccountRequest")]
+    public partial class GetPaymentAccountRequestType : BaseRequestType {
+        
+        private string paymentAccountIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string PaymentAccountID {
+            get {
+                return this.paymentAccountIDField;
+            }
+            set {
+                this.paymentAccountIDField = value;
+                this.RaisePropertyChanged("PaymentAccountID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:AddUserRoleRequest")]
+    public partial class AddUserRoleRequestType : BaseRequestType {
+        
+        private string userIDField;
+        
+        private RoleType roleField;
+        
+        private string locationField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string UserID {
+            get {
+                return this.userIDField;
+            }
+            set {
+                this.userIDField = value;
+                this.RaisePropertyChanged("UserID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:tyler:efm:services:schema:Common", Order=1)]
+        public RoleType Role {
+            get {
+                return this.roleField;
+            }
+            set {
+                this.roleField = value;
+                this.RaisePropertyChanged("Role");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public string Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+                this.RaisePropertyChanged("Location");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdatePaymentAccountRequest")]
     public partial class UpdatePaymentAccountRequestType : BaseRequestType {
         
@@ -2904,6 +2881,29 @@ namespace FileTime.EFMApi.EFMUserServices {
             set {
                 this.paymentAccountField = value;
                 this.RaisePropertyChanged("PaymentAccount");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:ResendActivationEmailRequest")]
+    public partial class ResendActivationEmailRequestType : BaseRequestType {
+        
+        private string userIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string UserID {
+            get {
+                return this.userIDField;
+            }
+            set {
+                this.userIDField = value;
+                this.RaisePropertyChanged("UserID");
             }
         }
     }
@@ -2936,20 +2936,20 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateNotificationPreferencesRequest")]
-    public partial class UpdateNotificationPreferencesRequestType : BaseRequestType {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetUserRequest")]
+    public partial class GetUserRequestType : BaseRequestType {
         
-        private NotificationType[] notificationField;
+        private string userIDField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Notification", Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
-        public NotificationType[] Notification {
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string UserID {
             get {
-                return this.notificationField;
+                return this.userIDField;
             }
             set {
-                this.notificationField = value;
-                this.RaisePropertyChanged("Notification");
+                this.userIDField = value;
+                this.RaisePropertyChanged("UserID");
             }
         }
     }
@@ -2996,31 +2996,8 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetUserRequest")]
-    public partial class GetUserRequestType : BaseRequestType {
-        
-        private string userIDField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string UserID {
-            get {
-                return this.userIDField;
-            }
-            set {
-                this.userIDField = value;
-                this.RaisePropertyChanged("UserID");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:SelfResendActivationEmailRequest")]
-    public partial class SelfResendActivationEmailRequestType : BaseRequestType {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetPasswordQuestionRequest")]
+    public partial class GetPasswordQuestionRequestType : BaseRequestType {
         
         private string emailField;
         
@@ -3056,6 +3033,29 @@ namespace FileTime.EFMApi.EFMUserServices {
             set {
                 this.userField = value;
                 this.RaisePropertyChanged("User");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:UpdateNotificationPreferencesRequest")]
+    public partial class UpdateNotificationPreferencesRequestType : BaseRequestType {
+        
+        private NotificationType[] notificationField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Notification", Namespace="urn:tyler:efm:services:schema:Common", Order=0)]
+        public NotificationType[] Notification {
+            get {
+                return this.notificationField;
+            }
+            set {
+                this.notificationField = value;
+                this.RaisePropertyChanged("Notification");
             }
         }
     }
@@ -3130,8 +3130,8 @@ namespace FileTime.EFMApi.EFMUserServices {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:GetPasswordQuestionRequest")]
-    public partial class GetPasswordQuestionRequestType : BaseRequestType {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:tyler:efm:services:schema:SelfResendActivationEmailRequest")]
+    public partial class SelfResendActivationEmailRequestType : BaseRequestType {
         
         private string emailField;
         
