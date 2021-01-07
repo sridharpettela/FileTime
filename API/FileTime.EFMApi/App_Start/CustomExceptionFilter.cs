@@ -20,7 +20,7 @@ namespace FileTime.EFMApi.App_Start
             //We can log this exception message
             var response = new HttpResponseMessage(HttpStatusCode.InternalServerError)
             {
-                Content = new StringContent("An unhandled exception was thrown by service."),
+                Content = new StringContent(exceptionMessage),
                 ReasonPhrase = "Internal Server Error.Please Contact your Administrator."
             };
             actionExecutedContext.Response = response;
