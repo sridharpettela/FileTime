@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\core\services\" />
+    <Folder Include="ClientApp\src\app\core\proto\generated\" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "FileTime.GrpcService";
+
+package FileTime;
+
+// The Filer service definition.
+service Filer {
+	// Filer Login
+	rpc FilerLogin (FilerLoginRequest) returns (FilerLoginReply);
+}
+
+// The request message filer email & password.
+message FilerLoginRequest {
+	string emailAddress = 1;
+	string password = 2;
+}
+
+// The response message containing the greetings.
+message FilerLoginReply {
+	string emailAddress = 1;
+	string password = 2;
+}
