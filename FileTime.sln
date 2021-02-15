@@ -47,7 +47,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7298E483-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.Log", "Core\FileTime.Log\FileTime.Log.csproj", "{7C52726F-1893-4A08-BF12-C021FF353260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTime.Web", "FileTime.Web\FileTime.Web.csproj", "{0AB640A8-8F76-4787-9F0C-61BC7ADED602}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTime.Web", "FileTime.Web\FileTime.Web.csproj", "{0AB640A8-8F76-4787-9F0C-61BC7ADED602}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proto", "Proto", "{67F9C94A-46F5-4230-9CFF-6E4FC8DF1A7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

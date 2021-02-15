@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FileTime.BAL;
+using FileTime.DAO.Common;
 using FileTime.DapperDAL;
 using FileTime.EFM;
 using FileTime.IBAL;
@@ -11,6 +12,7 @@ using FileTime.IEFM;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -18,8 +20,16 @@ namespace FileTime.GrpcService
 {
 	public class Startup
 	{
+
 		// This method gets called by the runtime. Use this method to add services to the container.
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+		public Startup(IConfiguration configuration)
+		{
+			Configuration = configuration;
+		}
+
+		public IConfiguration Configuration { get; }
+
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddGrpc();
@@ -51,6 +61,9 @@ namespace FileTime.GrpcService
 
 		private void MappingModule(IServiceCollection services)
 		{
+			services.Configure<AppSettings>(options => Configuration.GetSection("AppSettings").Bind(options));
+			services.Configure<ConnectionStrings>(options => Configuration.GetSection("ConnectionStrings").Bind(options));
+
 			services.AddScoped<IFilerDAL, FilerDAL>();
 			services.AddScoped<IUserServiceWrapper, UserServiceWrapper>();
 			services.AddScoped<IFilerBAL, FilerBAL>();

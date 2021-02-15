@@ -33,7 +33,8 @@ namespace FileTime.DapperDAL
 				parameter.Add("@emailAddress", emailAddress);
 				parameter.Add("@efmFilerId", efmFilerId);
 				parameter.Add("@password", password);
-				objFiler = con.Query<Filer>("FTSP_GetAndUpdateFiler", parameter, commandType: CommandType.StoredProcedure).FirstOrDefault();
+				var respObj = await con.QueryAsync<Filer>("FTSP_GetAndUpdateFiler", parameter, commandType: CommandType.StoredProcedure);
+				objFiler = respObj.FirstOrDefault();
 			}
 			return objFiler;
 		}
