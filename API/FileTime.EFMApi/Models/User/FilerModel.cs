@@ -7,5 +7,6 @@ namespace FileTime.EFMApi.Models.User
 {
 	public class FilerModel
 	{
+		public string Password { get; set; }
 	}
 }
