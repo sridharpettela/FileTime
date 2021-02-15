@@ -170,6 +170,362 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Connected Services\CourtRecordMDEServices\ansi-nist.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ansi_d20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\appinfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\CancelFiling.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\CancelFilingResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\CCTS_CCT_SchemaModule-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\CreateCase.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\CreateCaseCallback.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\CriminalExtensions.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-4.wsdl" />
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-41.wsdl" />
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-410.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-411.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-412.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-413.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-414.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-415.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-416.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-417.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-418.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-419.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-420.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-421.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-422.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-423.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-424.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-425.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-426.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-427.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-428.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-429.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-430.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-431.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-432.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-44.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-45.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-46.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-47.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-48.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ECF-49.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\EventCallback.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\fbi.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.CancelFilingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.CancelFilingResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.CaseListResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.CaseResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.CourtPolicyResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.CreateCaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.DocumentResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.FeesCalculationResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.FilingDetailResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.FilingListResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.FilingServiceResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.FilingStatusResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetCaseListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetCaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetFeesCalculationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetFilingDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetFilingListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetFilingServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetFilingStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetPolicyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetServiceAttachCaseListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetServiceInformationHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetServiceInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.GetServiceTypesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.MessageReceiptMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.NotifyCaseAssignmentCompleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.NotifyDocketingCompleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.NotifyEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.NotifyFilingReviewCompleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.NotifyReceiptCompleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.NotifyServiceCompleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.NotifyServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.RecordFilingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.ReviewFilingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.SecureCaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.ServeFilingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.ServiceAttachCaseListResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.ServiceInformationHistoryResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.ServiceInformationResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.ServiceReceiptMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CourtRecordMDEServices\FileTime.EFMApi.CourtRecordMDEServices.ServiceTypesResponseMessageType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\CourtRecordMDEServices\FilingDetailQuery.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\FilingDetailResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\FilingServiceQuery.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\FilingServiceResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\fips_10-4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\fips_6-4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\iso_4217.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\iso_639-3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\jxdm.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\niem-core.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\nonauthoritative-code.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\NotifyReceiptMessage.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\NotifyServiceMessage.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\screening.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\SecureCaseMessage.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ServiceAttachCaseListQuery.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ServiceAttachCaseListResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ServiceCallback.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ServiceInformationHistoryQuery.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ServiceInformationHistoryResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ServiceTypesRequestMessage.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\ServiceTypesResponseMessage.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\structures.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\Tyler.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\UBL-CommonAggregateComponents-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\UBL-CommonBasicComponents-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\UBL-QualifiedDataTypes-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\UBL-UnqualifiedDataTypes-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\unece_rec20-misc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\usps_states.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\xsd.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\EFMFirmServices\EfmFirmService.wsdl" />
     <None Include="Connected Services\EFMFirmServices\EFMFirmService.xsd">
       <SubType>Designer</SubType>
@@ -338,6 +694,13 @@
     </None>
     <None Include="Connected Services\EFMFirmServices\EFMFirmService9.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CourtRecordMDEServices\CourtRecordMDEPort.disco" />
+    <None Include="Connected Services\CourtRecordMDEServices\configuration91.svcinfo" />
+    <None Include="Connected Services\CourtRecordMDEServices\configuration.svcinfo" />
+    <None Include="Connected Services\CourtRecordMDEServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Connected Services\EFMFirmServices\FileTime.EFMApi.EFMFirmServices.AttorneyListResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -523,6 +886,11 @@
     <Compile Include="Attributes\BasicAuthenticationAttribute.cs" />
     <Compile Include="Behaviors\AuthHeaderBehavior.cs" />
     <Compile Include="Behaviors\ClientMessageInspector.cs" />
+    <Compile Include="Connected Services\CourtRecordMDEServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\EFMFirmServices\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1983,9 +2351,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Common\ErrorResponseModel.cs" />
+    <Compile Include="Models\Court\CaseModel.cs" />
+    <Compile Include="Models\User\FilerModel.cs" />
     <Compile Include="Models\User\UserLoginRequestModel.cs" />
     <Compile Include="Models\User\UserLoginResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wrappers\CourtRecordWrapper.cs" />
+    <Compile Include="Wrappers\Interface\ICourtRecordWrapper.cs" />
     <Compile Include="Wrappers\Interface\IUserServiceWrapper.cs" />
     <Compile Include="Wrappers\UserServiceWrapper.cs" />
   </ItemGroup>
@@ -2138,6 +2510,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\CourtRecordMDEServices\" />
     <WCFMetadataStorage Include="Connected Services\EFMFirmServices\" />
     <WCFMetadataStorage Include="Connected Services\EFMUserServices\" />
   </ItemGroup>

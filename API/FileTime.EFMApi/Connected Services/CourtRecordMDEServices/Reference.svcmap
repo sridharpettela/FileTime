@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="78f03e7d-00f1-4cf5-86bc-29b0af32c46d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://efspstage.eFileTexas.gov/EFM/CourtRecordMDEPort.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ECF-4.xsd" MetadataType="Schema" ID="3df3bb4a-263f-45a7-82c9-097c31e0feac" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-FilingListQueryMessage.xsd" />
+    <MetadataFile FileName="ECF-4.wsdl" MetadataType="Wsdl" ID="3f1b7b2b-48b2-4fb3-a10d-4378a113c27c" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/ECF-4.0-WebServicesProfile-Definitions-v2.1.wsdl" />
+    <MetadataFile FileName="fbi.xsd" MetadataType="Schema" ID="ed84d7a6-6637-474c-a98d-28f47d76441f" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/fbi/2.0/fbi.xsd" />
+    <MetadataFile FileName="Tyler.xsd" MetadataType="Schema" ID="5cf6a304-9845-4190-ae91-b6295061ba2a" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/Tyler.xsd" />
+    <MetadataFile FileName="FilingServiceQuery.xsd" MetadataType="Schema" ID="ce69b2ed-0c41-42a0-ae91-bc680f6e586c" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/FilingServiceQuery.xsd" />
+    <MetadataFile FileName="CCTS_CCT_SchemaModule-2.xsd" MetadataType="Schema" ID="15f2ccf5-3626-4042-9a82-cbafb5c5d9ea" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/CCTS_CCT_SchemaModule-2.1.xsd" />
+    <MetadataFile FileName="ServiceAttachCaseListQuery.xsd" MetadataType="Schema" ID="d1b60b95-2ead-41fa-991c-5a645fdf878e" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/ServiceAttachCaseListQuery.xsd" />
+    <MetadataFile FileName="ECF-41.xsd" MetadataType="Schema" ID="e49c62e5-8f3e-4769-b61b-aa6bf5e579c8" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-CaseResponseMessage.xsd" />
+    <MetadataFile FileName="ECF-42.xsd" MetadataType="Schema" ID="dac089f1-4cce-4f3c-a820-d7ecc56d86f9" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-ServiceInformationResponseMessage.xsd" />
+    <MetadataFile FileName="NotifyServiceMessage.xsd" MetadataType="Schema" ID="d4d7a345-e413-47bb-9fdf-3030e818f9e3" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/NotifyServiceMessage.xsd" />
+    <MetadataFile FileName="screening.xsd" MetadataType="Schema" ID="0f203e44-007b-4fc8-95fc-d2701fb50446" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/domains/screening/2.0/screening.xsd" />
+    <MetadataFile FileName="ECF-43.xsd" MetadataType="Schema" ID="4f30ac65-44e1-4deb-a02a-3dc42df0927e" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-PaymentReceiptMessage.xsd" />
+    <MetadataFile FileName="ECF-44.xsd" MetadataType="Schema" ID="9382a9c6-6ac2-4a64-bd05-0ba1ce20286b" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-ReviewFilingCallbackMessage.xsd" />
+    <MetadataFile FileName="ECF-45.xsd" MetadataType="Schema" ID="8ecb67c9-06e9-478c-8288-eefc5dddde12" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-FilingStatusQueryMessage.xsd" />
+    <MetadataFile FileName="ECF-46.xsd" MetadataType="Schema" ID="70a5b7ee-3d37-4b31-91b2-d92010cdcb65" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-CaseListResponseMessage.xsd" />
+    <MetadataFile FileName="SecureCaseMessage.xsd" MetadataType="Schema" ID="f4c92e84-36fb-446f-a885-ae6170c815ca" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/SecureCaseMessage.xsd" />
+    <MetadataFile FileName="ECF-47.xsd" MetadataType="Schema" ID="cfe816dd-a0d5-4d23-82a0-38727f058dad" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-CaseListQueryMessage.xsd" />
+    <MetadataFile FileName="ServiceCallback.xsd" MetadataType="Schema" ID="4c1b4d2b-a666-42fc-9f4a-f66b41b27a74" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/ServiceCallback.xsd" />
+    <MetadataFile FileName="ServiceAttachCaseListResponse.xsd" MetadataType="Schema" ID="7efeb7ee-6c85-4f91-a913-d712c9dedf4a" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/ServiceAttachCaseListResponse.xsd" />
+    <MetadataFile FileName="ECF-48.xsd" MetadataType="Schema" ID="1ac8839d-dc53-4105-b860-238c82134663" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-CoreFilingMessage.xsd" />
+    <MetadataFile FileName="ECF-41.wsdl" MetadataType="Wsdl" ID="01b7ba04-084f-4f04-a7c9-72bdcdce24b9" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/ECF-4.0-CourtRecordMDEService.wsdl" />
+    <MetadataFile FileName="CreateCase.xsd" MetadataType="Schema" ID="ba9c36b1-d549-4c55-83f9-48ff80d4a70f" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/CreateCase.xsd" />
+    <MetadataFile FileName="ECF-49.xsd" MetadataType="Schema" ID="92a7bf18-7f74-4264-8f48-ab20deb168f4" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-FeesCalculationQueryMessage.xsd" />
+    <MetadataFile FileName="fips_10-4.xsd" MetadataType="Schema" ID="9ee9365b-d43e-4dc1-9fd9-9b887090ad38" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/fips_10-4/2.0/fips_10-4.xsd" />
+    <MetadataFile FileName="unece_rec20-misc.xsd" MetadataType="Schema" ID="8ec816a0-070a-45a3-8198-8af6cd127ed1" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/unece_rec20-misc/2.0/unece_rec20-misc.xsd" />
+    <MetadataFile FileName="UBL-CommonBasicComponents-2.xsd" MetadataType="Schema" ID="baf161ab-8463-4bfc-8240-31a7202550d8" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/UBL-CommonBasicComponents-2.1.xsd" />
+    <MetadataFile FileName="ECF-410.xsd" MetadataType="Schema" ID="1c3a7f6f-38d6-41ae-b51f-555ed1d16d61" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-PaymentMessage.xsd" />
+    <MetadataFile FileName="ServiceInformationHistoryResponse.xsd" MetadataType="Schema" ID="0661bd3c-2ce3-4ac3-b4bf-3a78d18f0de8" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/ServiceInformationHistoryResponse.xsd" />
+    <MetadataFile FileName="ansi-nist.xsd" MetadataType="Schema" ID="e8cff429-f91a-4240-ad3d-5017afe10e3d" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/ansi-nist/2.0/ansi-nist.xsd" />
+    <MetadataFile FileName="CancelFilingResponse.xsd" MetadataType="Schema" ID="29d8e3ec-9c2e-427b-930e-94f0a252b827" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/CancelFilingResponse.xsd" />
+    <MetadataFile FileName="ECF-411.xsd" MetadataType="Schema" ID="93ce2810-7111-4baa-9132-87f1b0bc6823" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-ServiceInformationQueryMessage.xsd" />
+    <MetadataFile FileName="jxdm.xsd" MetadataType="Schema" ID="fe8c5e6b-c711-48cd-a65b-f7a2280551a2" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/domains/jxdm/4.0/jxdm.xsd" />
+    <MetadataFile FileName="ECF-412.xsd" MetadataType="Schema" ID="a8eab9ba-6282-444f-bfed-e98c4e7b3c3e" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-DocumentQueryMessage.xsd" />
+    <MetadataFile FileName="xsd.xsd" MetadataType="Schema" ID="242a991b-91c7-4171-ab98-19d354dfba32" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/proxy/xsd/2.0/xsd.xsd" />
+    <MetadataFile FileName="xmldsig-core-schema.xsd" MetadataType="Schema" ID="57fc212a-eed2-4d99-a030-b1b9392d1d23" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/common/xmldsig-core-schema.xsd" />
+    <MetadataFile FileName="niem-core.xsd" MetadataType="Schema" ID="29c429d4-c1a2-4250-a8d7-b324082f3b9e" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/niem-core/2.0/niem-core.xsd" />
+    <MetadataFile FileName="ECF-413.xsd" MetadataType="Schema" ID="efb01f04-34a0-4acb-84a4-71b58532e86a" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-CourtPolicyResponseMessage.xsd" />
+    <MetadataFile FileName="appinfo.xsd" MetadataType="Schema" ID="d36ad620-61d5-407e-86ef-27a5b83ba33c" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/appinfo/2.0/appinfo.xsd" />
+    <MetadataFile FileName="ECF-414.xsd" MetadataType="Schema" ID="c45b1d4a-680a-494d-9f42-e59a543a75c5" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/casetype/ECF-4.0-AppellateCase.xsd" />
+    <MetadataFile FileName="structures.xsd" MetadataType="Schema" ID="debe5b8c-bec8-4ee3-a301-70ebbd9b3824" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/structures/2.0/structures.xsd" />
+    <MetadataFile FileName="CancelFiling.xsd" MetadataType="Schema" ID="34b4d72e-5c27-4cda-a00a-b380987c99f9" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/CancelFiling.xsd" />
+    <MetadataFile FileName="UBL-CommonAggregateComponents-2.xsd" MetadataType="Schema" ID="5d6b5687-a4bf-42d8-b420-f64cda795ba3" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/UBL-CommonAggregateComponents-2.1.xsd" />
+    <MetadataFile FileName="nonauthoritative-code.xsd" MetadataType="Schema" ID="ee86ca91-aa2c-4ce2-8b24-78e5966701c0" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/nonauthoritative-code/2.0/nonauthoritative-code.xsd" />
+    <MetadataFile FileName="ECF-415.xsd" MetadataType="Schema" ID="6cbd8f8f-ccaa-495d-8c3b-e8fc4776a62a" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-CourtPolicyQueryMessage.xsd" />
+    <MetadataFile FileName="ServiceInformationHistoryQuery.xsd" MetadataType="Schema" ID="f379fc88-a83b-485f-8c01-f369c4e09414" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/ServiceInformationHistoryQuery.xsd" />
+    <MetadataFile FileName="ECF-416.xsd" MetadataType="Schema" ID="d90a29fa-82aa-4478-94fe-9191b1b0af02" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-DocumentResponseMessage.xsd" />
+    <MetadataFile FileName="UBL-QualifiedDataTypes-2.xsd" MetadataType="Schema" ID="62ccf967-44d4-4059-9e1c-064b70f23d28" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/UBL-QualifiedDataTypes-2.1.xsd" />
+    <MetadataFile FileName="iso_639-3.xsd" MetadataType="Schema" ID="06de5cef-2476-4fe7-b6ce-c4a4ad0ceaf7" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/iso_639-3/2.0/iso_639-3.xsd" />
+    <MetadataFile FileName="ECF-417.xsd" MetadataType="Schema" ID="3663c678-f12c-4884-ad41-e6a960f25bc8" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-RecordDocketingCallbackMessage.xsd" />
+    <MetadataFile FileName="ServiceTypesRequestMessage.xsd" MetadataType="Schema" ID="3b4cdc40-2db9-47a7-b473-9febd2dfe976" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/ServiceTypesRequestMessage.xsd" />
+    <MetadataFile FileName="FilingDetailQuery.xsd" MetadataType="Schema" ID="d1f4719c-48e2-4217-b23e-17e731aecfbe" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/FilingDetailQuery.xsd" />
+    <MetadataFile FileName="FilingDetailResponse.xsd" MetadataType="Schema" ID="b70aff5e-91f8-4aaf-b665-6d047b0203a9" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/FilingDetailResponse.xsd" />
+    <MetadataFile FileName="fips_6-4.xsd" MetadataType="Schema" ID="bd4c2b01-87bc-48c3-b4f7-74a41e1fba6b" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/fips_6-4/2.0/fips_6-4.xsd" />
+    <MetadataFile FileName="ansi_d20.xsd" MetadataType="Schema" ID="9ebd3892-a199-4573-80f4-fea61004fca0" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/ansi_d20/2.0/ansi_d20.xsd" />
+    <MetadataFile FileName="CriminalExtensions.xsd" MetadataType="Schema" ID="4710cfc4-ca10-45dc-bd4b-05a7baecfa6d" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/CriminalExtensions.xsd" />
+    <MetadataFile FileName="CourtRecordMDEPort.disco" MetadataType="Disco" ID="1026a577-3602-49ce-96b7-28ba0ee969d3" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/CourtRecordMDEPort.svc?disco" />
+    <MetadataFile FileName="UBL-UnqualifiedDataTypes-2.xsd" MetadataType="Schema" ID="54e545f1-8321-4915-8834-330552a616cd" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/UBL-UnqualifiedDataTypes-2.1.xsd" />
+    <MetadataFile FileName="ECF-418.xsd" MetadataType="Schema" ID="2e35f1c4-2739-4b09-9b59-9f739b1ae1ca" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-MessageReceiptMessage.xsd" />
+    <MetadataFile FileName="ECF-419.xsd" MetadataType="Schema" ID="b7facac3-77bc-4c37-9b07-a5194024c96b" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-CaseQueryMessage.xsd" />
+    <MetadataFile FileName="CreateCaseCallback.xsd" MetadataType="Schema" ID="1aef5edf-861e-4717-bfb3-be2e277a499d" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/CreateCaseCallback.xsd" />
+    <MetadataFile FileName="ECF-420.xsd" MetadataType="Schema" ID="c517b81a-2164-4916-a5a2-2931c44116d8" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/casetype/ECF-4.0-CitationCase.xsd" />
+    <MetadataFile FileName="ServiceTypesResponseMessage.xsd" MetadataType="Schema" ID="321bbcde-a164-46dd-867b-b46f75bb6fd3" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/ServiceTypesResponseMessage.xsd" />
+    <MetadataFile FileName="ECF-421.xsd" MetadataType="Schema" ID="2e9214e0-5cfb-4a72-9abf-22ca7dd77da0" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/common/ECF-4.0-AppInfo.xsd" />
+    <MetadataFile FileName="ECF-422.xsd" MetadataType="Schema" ID="1f99db34-e0f5-4880-bc08-25c40aa6c07b" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-ServiceReceiptMessage.xsd" />
+    <MetadataFile FileName="iso_4217.xsd" MetadataType="Schema" ID="6c2279da-338b-4ef7-9ade-0d35210c1433" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/iso_4217/2.0/iso_4217.xsd" />
+    <MetadataFile FileName="ECF-423.xsd" MetadataType="Schema" ID="b3a74673-f3de-4dda-8f55-91ce86975811" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/casetype/ECF-4.0-CivilCase.xsd" />
+    <MetadataFile FileName="ECF-424.xsd" MetadataType="Schema" ID="1d68503c-d966-41b3-86df-8c24bcd23052" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/casetype/ECF-4.0-JuvenileCase.xsd" />
+    <MetadataFile FileName="ECF-425.xsd" MetadataType="Schema" ID="8a5ac573-f8b1-47c9-9031-889a55d6a9fa" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-FeesCalculationResponseMessage.xsd" />
+    <MetadataFile FileName="ECF-426.xsd" MetadataType="Schema" ID="8fa1c6b7-0bed-4be2-86fb-cd7c4011dbf8" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-RecordDocketingMessage.xsd" />
+    <MetadataFile FileName="FilingServiceResponse.xsd" MetadataType="Schema" ID="1c8017cb-3375-494d-8f7f-56fde3ed73c1" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/FilingServiceResponse.xsd" />
+    <MetadataFile FileName="ECF-427.xsd" MetadataType="Schema" ID="0ed8d089-bf59-4ae5-8185-611ef900f157" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/casetype/ECF-4.0-CriminalCase.xsd" />
+    <MetadataFile FileName="ECF-428.xsd" MetadataType="Schema" ID="43d9d2e6-d461-4e2b-bf05-5df393770b61" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/casetype/ECF-4.0-DomesticCase.xsd" />
+    <MetadataFile FileName="usps_states.xsd" MetadataType="Schema" ID="d9167513-280a-40d3-bbaa-93c0b28ae090" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/constraint/niem/usps_states/2.0/usps_states.xsd" />
+    <MetadataFile FileName="EventCallback.xsd" MetadataType="Schema" ID="2481f84e-591e-4abd-a9ff-606cad9c3c1c" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/EventCallback.xsd" />
+    <MetadataFile FileName="ECF-429.xsd" MetadataType="Schema" ID="1391bffb-a07f-4675-944d-eda9dc707479" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-FilingListResponseMessage.xsd" />
+    <MetadataFile FileName="ECF-430.xsd" MetadataType="Schema" ID="cf00e846-680a-448e-ac14-07b0f32afab3" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/message/ECF-4.0-FilingStatusResponseMessage.xsd" />
+    <MetadataFile FileName="ECF-431.xsd" MetadataType="Schema" ID="1374c6a9-d6d4-4661-abdb-aeb4ea56b2b7" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/casetype/ECF-4.0-BankruptcyCase.xsd" />
+    <MetadataFile FileName="ECF-432.xsd" MetadataType="Schema" ID="ec7adf4f-caa8-482a-82c7-0b0052b125f5" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/common/ECF-4.0-CommonTypes.xsd" />
+    <MetadataFile FileName="NotifyReceiptMessage.xsd" MetadataType="Schema" ID="befe6274-7456-4152-96a1-52f19e732eaa" SourceId="1" SourceUrl="https://efspstage.efiletexas.gov/EFM/Schema/substitution/NotifyReceiptMessage.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
