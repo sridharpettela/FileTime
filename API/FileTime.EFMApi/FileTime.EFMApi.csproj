@@ -2351,13 +2351,20 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Common\ErrorResponseModel.cs" />
+    <Compile Include="Models\Court\AttorneyModel.cs" />
     <Compile Include="Models\Court\CaseModel.cs" />
+    <Compile Include="Models\Court\FirmModel.cs" />
+    <Compile Include="Models\Court\PaymentAccount.cs" />
+    <Compile Include="Models\User\eFileTexasNotificationModel.cs" />
     <Compile Include="Models\User\FilerModel.cs" />
+    <Compile Include="Models\User\ServiceContactModel.cs" />
     <Compile Include="Models\User\UserLoginRequestModel.cs" />
     <Compile Include="Models\User\UserLoginResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Wrappers\CourtRecordWrapper.cs" />
+    <Compile Include="Wrappers\FirmServiceWrapper.cs" />
     <Compile Include="Wrappers\Interface\ICourtRecordWrapper.cs" />
+    <Compile Include="Wrappers\Interface\IFirmServiceWrapper.cs" />
     <Compile Include="Wrappers\Interface\IUserServiceWrapper.cs" />
     <Compile Include="Wrappers\UserServiceWrapper.cs" />
   </ItemGroup>
