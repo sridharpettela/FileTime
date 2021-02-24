@@ -2919,7 +2919,9 @@ namespace FileTime.EFMApi.EFMFirmServices {
                 this.RaisePropertyChanged("ServiceContact");
             }
         }
-    }
+
+		public ServiceContactType ServiceContactModel { get; internal set; }
+	}
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]

@@ -2354,10 +2354,13 @@
     <Compile Include="Models\Court\AttorneyModel.cs" />
     <Compile Include="Models\Court\CaseModel.cs" />
     <Compile Include="Models\Court\FirmModel.cs" />
-    <Compile Include="Models\Court\PaymentAccount.cs" />
+    <Compile Include="Models\Court\PaymentAccountModel.cs" />
+    <Compile Include="Models\User\AddressModel.cs" />
     <Compile Include="Models\User\eFileTexasNotificationModel.cs" />
     <Compile Include="Models\User\FilerModel.cs" />
+    <Compile Include="Models\User\FilerRole.cs" />
     <Compile Include="Models\User\ServiceContactModel.cs" />
+    <Compile Include="Models\User\TypeOfPayment.cs" />
     <Compile Include="Models\User\UserLoginRequestModel.cs" />
     <Compile Include="Models\User\UserLoginResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

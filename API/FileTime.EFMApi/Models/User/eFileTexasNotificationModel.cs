@@ -7,8 +7,8 @@ namespace FileTime.EFMApi.Models.User
 {
 	public class eFileTexasNotificationModel
 	{
-		public virtual string Code { get; set; }
-		public virtual string Description { get; set; }
-		public virtual bool IsSelected { get; set; }
+		public  string Code { get; set; }
+		public  string Description { get; set; }
+		public  bool IsSelected { get; set; }
 	}
 }
